@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Panduan lengkap Mount & Blade - Warband, Fire & Sword, dan Bannerlord. Senjata, taktik, mekanis permainan, dan masih banyak lagi." />
+  <title>Mount & Blade — Panduan Lengkap Ketiga Seri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-icon"><i class="ph-bold ph-sword"></i></span>
+        <span class="logo-text">M&amp;B Guide</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link active">Beranda</a></li>
+        <li><a href="warband.html" class="nav-link">Warband</a></li>
+        <li><a href="fire-and-sword.html" class="nav-link">Fire &amp; Sword</a></li>
+        <li><a href="bannerlord.html" class="nav-link">Bannerlord</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Panduan Ultimate</p>
+      <h1 class="hero-title">Mount &amp; Blade</h1>
+      <p class="hero-subtitle">Panduan Lengkap &amp; Komprehensif Ketiga Seri</p>
+      <p class="hero-desc">Kuasai dunia Calradia — dari senjata hingga taktik tempur, manajemen kerajaan, perekrutan pasukan, dan setiap mekanis tersembunyi dalam tiga game legendaris.</p>
+      <div class="hero-buttons">
+        <a href="warband.html" class="btn btn-primary">Mulai dari Warband</a>
+        <a href="bannerlord.html" class="btn btn-outline">Coba Bannerlord</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- GAME SELECTION CARDS -->
+  <section class="games-section" id="games">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pilih Serimu</h2>
+        <p class="section-subtitle">Setiap game memiliki mekanis, senjata, dan pengalaman yang unik</p>
+      </div>
+      <div class="games-grid">
+
+        <!-- Warband Card -->
+        <article class="game-card" id="card-warband">
+          <div class="game-card-glow warband-glow"></div>
+          <div class="game-card-inner">
+            <div class="game-card-header">
+              <div class="game-badge warband-badge">2010</div>
+              <div class="game-emblem"><i class="ph-bold ph-shield"></i></div>
+            </div>
+            <h3 class="game-card-title">Mount &amp; Blade: Warband</h3>
+            <p class="game-card-desc">Game original yang mendefinisikan genre. Dunia Calradia dengan 6 faksi, sistem pertempuran mendalam, dan kampanye sandbox tak berujung.</p>
+            <ul class="game-card-features">
+              <li><i class="ph-bold ph-castle-turret"></i> 6 Faksi Unik</li>
+              <li><i class="ph-bold ph-sword"></i> Sistem Senjata Lengkap</li>
+              <li><i class="ph-bold ph-crown"></i> Manajemen Kerajaan</li>
+              <li><i class="ph-bold ph-users"></i> Multiplayer Online</li>
+            </ul>
+            <a href="warband.html" class="game-card-btn warband-btn">
+              Lihat Panduan <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Fire and Sword Card -->
+        <article class="game-card" id="card-fas">
+          <div class="game-card-glow fas-glow"></div>
+          <div class="game-card-inner">
+            <div class="game-card-header">
+              <div class="game-badge fas-badge">2011</div>
+              <div class="game-emblem"><i class="ph-bold ph-fire"></i></div>
+            </div>
+            <h3 class="game-card-title">With Fire &amp; Sword</h3>
+            <p class="game-card-desc">Berlatar Eropa Timur abad ke-17. Senjata api masuk ke Calradia — perpaduan musket, pistol, dan pertempuran abad pertengahan yang mendebarkan.</p>
+            <ul class="game-card-features">
+              <li><i class="ph-bold ph-crosshair"></i> Senjata Api &amp; Bubuk Mesiu</li>
+              <li><i class="ph-bold ph-gear-six"></i> Mekanis Tempur Baru</li>
+              <li><i class="ph-bold ph-map-trifold"></i> Setting Eropa Timur</li>
+              <li><i class="ph-bold ph-scroll"></i> Misi &amp; Quest Lebih Dalam</li>
+            </ul>
+            <a href="fire-and-sword.html" class="game-card-btn fas-btn">
+              Lihat Panduan <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Bannerlord Card -->
+        <article class="game-card" id="card-bannerlord">
+          <div class="game-card-glow bannerlord-glow"></div>
+          <div class="game-card-inner">
+            <div class="game-card-header">
+              <div class="game-badge bannerlord-badge">2022</div>
+              <div class="game-emblem"><i class="ph-bold ph-crown"></i></div>
+            </div>
+            <h3 class="game-card-title">Bannerlord II</h3>
+            <p class="game-card-desc">Prequel besar-besaran dengan grafis modern, mekanis yang diperluas, sistem klan, smithing, crafting, dan dunia yang lebih hidup dari sebelumnya.</p>
+            <ul class="game-card-features">
+              <li><i class="ph-bold ph-hammer"></i> Smithing &amp; Crafting</li>
+              <li><i class="ph-bold ph-users-three"></i> Sistem Klan &amp; Dinasti</li>
+              <li><i class="ph-bold ph-map-trifold"></i> Peta Dunia yang Luas</li>
+              <li><i class="ph-bold ph-lightning"></i> Pertempuran Besar-besaran</li>
+            </ul>
+            <a href="bannerlord.html" class="game-card-btn bannerlord-btn">
+              Lihat Panduan <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK TIPS -->
+  <section class="tips-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tips Esensial</h2>
+        <p class="section-subtitle">Berlaku di semua seri Mount &amp; Blade</p>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon"><i class="ph-bold ph-flag"></i></div>
+          <h4>Kuasai Berkuda</h4>
+          <p>Kavaleri adalah raja medan perang. Latih skill berkuda dan selalu serang dari sisi atau belakang musuh.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon"><i class="ph-bold ph-shield-check"></i></div>
+          <h4>Blok Manual</h4>
+          <p>Matikan auto-block sedini mungkin. Blok manual memberikan kontrol penuh dan membuat kamu jauh lebih tangguh.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon"><i class="ph-bold ph-trend-up"></i></div>
+          <h4>Kelola Moral</h4>
+          <p>Moral pasukan menentukan segalanya. Bayar gaji tepat waktu, menang pertempuran, dan jaga makanan berlimpah.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon"><i class="ph-bold ph-handshake"></i></div>
+          <h4>Bangun Relasi</h4>
+          <p>Relation dengan lord dan wanita bangsawan sangat penting. Berikan hadiah, bantu mereka dalam pertempuran.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon"><i class="ph-bold ph-coins"></i></div>
+          <h4>Ekonomi Stabil</h4>
+          <p>Trading di awal game sangat menguntungkan. Beli rendah, jual tinggi antar kota untuk modal awal yang kuat.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon"><i class="ph-bold ph-crosshair"></i></div>
+          <h4>Komposisi Pasukan</h4>
+          <p>Campurkan pemanah, infanteri, dan kavaleri. Tidak ada satu jenis pasukan yang sempurna di semua situasi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Perbandingan Ketiga Seri</h2>
+        <p class="section-subtitle">Lihat perbedaan utama antara Warband, Fire &amp; Sword, dan Bannerlord</p>
+      </div>
+      <div class="table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Fitur</th>
+              <th class="warband-col">Warband</th>
+              <th class="fas-col">Fire &amp; Sword</th>
+              <th class="bannerlord-col">Bannerlord</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Senjata Api</td>
+              <td class="no">✗</td>
+              <td class="yes">✓ Musket, Pistol</td>
+              <td class="no">✗</td>
+            </tr>
+            <tr>
+              <td>Crafting Senjata</td>
+              <td class="no">✗</td>
+              <td class="no">✗</td>
+              <td class="yes">✓ Smithing</td>
+            </tr>
+            <tr>
+              <td>Sistem Klan</td>
+              <td class="partial">Terbatas</td>
+              <td class="partial">Terbatas</td>
+              <td class="yes">✓ Lengkap</td>
+            </tr>
+            <tr>
+              <td>Siege Engine</td>
+              <td class="yes">✓ Dasar</td>
+              <td class="yes">✓ + Artileri</td>
+              <td class="yes">✓ Lengkap</td>
+            </tr>
+            <tr>
+              <td>Jumlah Faksi</td>
+              <td>6</td>
+              <td>5</td>
+              <td>8+</td>
+            </tr>
+            <tr>
+              <td>Multiplayer</td>
+              <td class="yes">✓ Robust</td>
+              <td class="partial">Terbatas</td>
+              <td class="yes">✓ Online</td>
+            </tr>
+            <tr>
+              <td>Mod Support</td>
+              <td class="yes">✓ Sangat Aktif</td>
+              <td class="partial">Terbatas</td>
+              <td class="yes">✓ Berkembang</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon"><i class="ph-bold ph-sword"></i></span>
+          <span class="logo-text">M&amp;B Guide</span>
+          <p class="footer-tagline">Panduan komunitas fan-made. Bukan afiliasi resmi TaleWorlds.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Navigasi</h5>
+          <ul>
+            <li><a href="warband.html">Warband</a></li>
+            <li><a href="fire-and-sword.html">Fire &amp; Sword</a></li>
+            <li><a href="bannerlord.html">Bannerlord</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Topik</h5>
+          <ul>
+            <li><a href="warband.html#weapons">Senjata</a></li>
+            <li><a href="warband.html#tactics">Taktik</a></li>
+            <li><a href="warband.html#economy">Ekonomi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 M&amp;B Guide — Dibuat dengan <i class="ph-fill ph-heart" style="color:var(--fas-primary);font-size:0.9rem;"></i> untuk komunitas Mount &amp; Blade Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

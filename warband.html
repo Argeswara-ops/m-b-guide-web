@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Panduan lengkap Mount & Blade: Warband — senjata, taktik tempur, faksi, sistem skill, manajemen kerajaan, dan semua mekanis game secara detail." />
+  <title>Warband — Panduan Lengkap | M&B Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body class="warband-theme">
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-icon"><i class="ph-bold ph-sword"></i></span>
+        <span class="logo-text">M&amp;B Guide</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="warband.html" class="nav-link active">Warband</a></li>
+        <li><a href="fire-and-sword.html" class="nav-link">Fire &amp; Sword</a></li>
+        <li><a href="bannerlord.html" class="nav-link">Bannerlord</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="game-hero">
+    <div class="game-hero-content">
+      <span class="game-hero-tag">Dirilis 2010 &bull; TaleWorlds</span>
+      <h1 class="game-hero-title">Mount &amp; Blade: Warband</h1>
+      <p class="game-hero-subtitle">Panduan komprehensif — dari awal karir hingga menguasai seluruh Calradia. Setiap senjata, taktik, faksi, dan mekanis dibahas tuntas.</p>
+    </div>
+  </section>
+
+  <div class="content-layout">
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <p class="sidebar-nav-title">Daftar Isi</p>
+        <ul>
+          <li><a href="#lore" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-book-open"></i></span> Lore &amp; Cerita</a></li>
+          <li><a href="#awal-game" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-rocket"></i></span> Awal Game</a></li>
+          <li><a href="#weapons" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-sword"></i></span> Senjata</a></li>
+          <li><a href="#combat" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-sword"></i></span> Mekanis Tempur</a></li>
+          <li><a href="#troops" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-users"></i></span> Pasukan</a></li>
+          <li><a href="#factions" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-castle-turret"></i></span> Faksi</a></li>
+          <li><a href="#tactics" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-crosshair"></i></span> Taktik</a></li>
+          <li><a href="#skills" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-trend-up"></i></span> Skill &amp; Atribut</a></li>
+          <li><a href="#economy" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-coins"></i></span> Ekonomi</a></li>
+          <li><a href="#kingdom" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-crown"></i></span> Kerajaan</a></li>
+          <li><a href="#companions" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-handshake"></i></span> Companions</a></li>
+          <li><a href="#quests" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-scroll"></i></span> Quests &amp; Misi</a></li>
+          <li><a href="#siege" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-shield-check"></i></span> Pengepungan</a></li>
+          <li><a href="#tips" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-lightbulb"></i></span> Tips &amp; Trik</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <section class="content-section reveal" id="lore">
+        <h2 class="content-section-title"><i class="ph-bold ph-book-open"></i> Lore &amp; Backstory Calradia</h2>
+        <p class="content-section-desc">Dunia Warband berlatar di benua fiktif bernama Calradia. Dulunya, seluruh benua ini disatukan di bawah panji Kekaisaran Calradic kuno, tapi sekarang semuanya hancur lebur.</p>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-crown"></i></span>
+          <div class="tactic-content">
+            <h4>Runtuhnya Kekaisaran &amp; Lahirnya 6 Faksi</h4>
+            <p>Ratusan tahun sebelum kejadian di Warband, Calradic Empire menguasai semuanya (mirip Kekaisaran Romawi). Setelah kaisar terakhir tiada tanpa pewaris yang jelas, perang saudara pecah. Suku-suku barbar dari luar ikut campur, dan akhirnya benua terpecah belah menjadi 6 kerajaan (Swadia, Vaegir, Khergit, Nord, Rhodok, Sarranid). Kini, keenam raja ini saling serang tanpa henti, mengklaim bahwa merekalah pewaris sah dari kekaisaran masa lalu.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Sejarah</span><span class="tactic-tag">Perang Saudara</span></div>
+          </div>
+        </div>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-scales"></i></span>
+          <div class="tactic-content">
+            <h4>Pewaris Tahta yang Terbuang (The Claimants)</h4>
+            <p>Nggak cuma raja-raja yang lagi berkuasa yang bikin pusing, di setiap faksi juga ada <strong>Claimant</strong> (pewaris sah yang dikudeta atau diasingkan). Contohnya Lady Isolla dari Suno (Swadia) atau Prince Valdym (Vaegir). Kamu bisa nemuin mereka sembunyi di kastil raja lain, dan kalau kamu mau, kamu bisa bersumpah setia buat bantu mereka merebut kembali tahtanya lewat perang saudara (Rebellion)!</p>
+            <div class="tactic-tags"><span class="tactic-tag">Pemberontakan</span><span class="tactic-tag">Klaim Tahta</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="awal-game">
+        <h2 class="content-section-title"><i class="ph-bold ph-rocket"></i> Memulai Perjalanan</h2>
+        <p class="content-section-desc">Warband dimulai dengan pembuatan karakter. Pilihan background kamu lumayan ngaruh ke awal permainan — pilih gaya main yang paling cocok sama kamu.</p>
+
+        <div class="info-box info-warn">
+          <span class="info-box-icon"><i class="ph-bold ph-warning"></i></span>
+          <div class="info-box-content">
+            <h5>Tips Awal Penting</h5>
+            <p>Jangan langsung bergabung faksi di awal! Bangun dulu pasukan, kumpulkan uang dari trading, dan latih karakter ke level 10+ sebelum berpihak.</p>
+          </div>
+        </div>
+
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Backstory</th><th>Bonus Utama</th><th>Rekomendasi</th></tr></thead>
+            <tbody>
+              <tr><td>Bangsawan</td><td>+Persuasion, Relation awal lebih baik</td><td><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i> – Buat yang suka main politik</td></tr>
+              <tr><td>Pedagang</td><td>+Trade, modal awal lebih besar</td><td><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i> – Modalnya enak banget buat awal</td></tr>
+              <tr><td>Penjarah</td><td>+Combat skills, mulai dengan senjata baik</td><td><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i> – Buat yang nggak sabar pengen bacok-bacokan</td></tr>
+              <tr><td>Gembala</td><td>+Riding, speed di map world</td><td><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i> – Lumayan buat kabur awal-awal</td></tr>
+              <tr><td>Petani</td><td>+Wound Treatment, tahan lama</td><td><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i> – Standar aja, lebih kerasa buat support</td></tr>
+              <tr><td>Biarawan</td><td>+Healing &amp; Persuasion</td><td><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i> – Bagus banget buat jaga pasukan dari kematian permanen</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box info-tip">
+          <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
+          <div class="info-box-content">
+            <h5>Urutan Prioritas Awal</h5>
+            <p>1. Rekrut pasukan desa → 2. Kalahkan bandit kecil → 3. Jual rampasan di kota → 4. Training pasukan → 5. Mulai ambil quest dari lord → 6. Baru bergabung faksi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="weapons">
+        <h2 class="content-section-title"><i class="ph-bold ph-sword"></i> Senjata &amp; Peralatan</h2>
+        <p class="content-section-desc">Setiap kategori senjata memiliki kelebihan dan kekurangan unik. Pahami stat damage type, reach, dan speed untuk memaksimalkan efektivitas tempur.</p>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Satu Tangan (One-Handed)</h3>
+        <div class="weapons-grid">
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-sword"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-melee">Melee</span></div>
+            </div>
+            <h4 class="weapon-name">Sword (Pedang)</h4>
+            <p class="weapon-desc">Seimbang antara kecepatan dan damage. Cocok dikombinasikan dengan perisai. Damage type: Cut.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div><span class="stat-value">96</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:70%"></div></div><span class="stat-value">28c</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:65%"></div></div><span class="stat-value">95</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-hammer"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-melee">Melee</span></div>
+            </div>
+            <h4 class="weapon-name">Mace (Gada)</h4>
+            <p class="weapon-desc">Damage type Blunt — ampuh melawan armor berat. Musuh tidak mati, hanya pingsan (bisa diambil tawanan). Ideal untuk penculik &amp; perampok.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:70%"></div></div><span class="stat-value">87</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:75%"></div></div><span class="stat-value">32b</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:55%"></div></div><span class="stat-value">85</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-sword"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-melee">Melee</span></div>
+            </div>
+            <h4 class="weapon-name">Axe (Kapak)</h4>
+            <p class="weapon-desc">Damage tertinggi one-handed. Bisa menembus shield HP lebih efisien. Damage type: Cut. Lambat tapi mematikan.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:60%"></div></div><span class="stat-value">75</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:90%"></div></div><span class="stat-value">36c</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:50%"></div></div><span class="stat-value">78</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Dua Tangan (Two-Handed)</h3>
+        <div class="weapons-grid">
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-sword"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-melee">Two-Handed</span></div>
+            </div>
+            <h4 class="weapon-name">Two-Handed Sword</h4>
+            <p class="weapon-desc">Damage dan jangkauan superior. Tidak bisa pakai shield. Pilihan terbaik untuk infanteri agresif dan duel. Swing kiri-kanan sangat mematikan.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:65%"></div></div><span class="stat-value">82</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:92%"></div></div><span class="stat-value">42c</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:88%"></div></div><span class="stat-value">118</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-sword"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-melee">Two-Handed</span></div>
+            </div>
+            <h4 class="weapon-name">Great Axe</h4>
+            <p class="weapon-desc">Senjata paling menghancurkan vs armor. Damage blunt/cut hybrid. Overhead smash mampu one-hit KO musuh tanpa armor. Lambat namun mematikan.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:50%"></div></div><span class="stat-value">68</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:98%"></div></div><span class="stat-value">48c</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:75%"></div></div><span class="stat-value">105</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Polearm</h3>
+        <div class="weapons-grid">
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-arrow-up"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-polearm">Polearm</span></div>
+            </div>
+            <h4 class="weapon-name">Lance (di atas kuda)</h4>
+            <p class="weapon-desc">Senjata kavaleri terbaik. Couched lance charge menghasilkan bonus damage massive dari kecepatan kuda. Satu hit bisa membunuh hampir semua musuh.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:55%"></div></div><span class="stat-value">72</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:100%"></div></div><span class="stat-value">★ Charge</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:95%"></div></div><span class="stat-value">140</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-arrows-out"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-polearm">Polearm</span></div>
+            </div>
+            <h4 class="weapon-name">Spear (Tombak)</h4>
+            <p class="weapon-desc">Jangkauan jauh dan Pierce damage. Bisa dipakai bersamaan shield (one-hand mode). Counter terbaik untuk kavaleri — tusukan dari depan.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:72%"></div></div><span class="stat-value">90</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:68%"></div></div><span class="stat-value">26p</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:92%"></div></div><span class="stat-value">125</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Senjata Jarak Jauh</h3>
+        <div class="weapons-grid">
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-target"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-ranged">Ranged</span></div>
+            </div>
+            <h4 class="weapon-name">War Bow</h4>
+            <p class="weapon-desc">Busur terkuat dengan damage dan range terbaik. Butuh skill Power Draw tinggi. Wajib untuk sniper build. Bisa dipakai di atas kuda (Horse Archery).</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:88%"></div></div><span class="stat-value">34p</span></div>
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:55%"></div></div><span class="stat-value">71</span></div>
+              <div class="stat-row"><span class="stat-label">Range</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:90%"></div></div><span class="stat-value">95</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-crosshair"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-ranged">Ranged</span></div>
+            </div>
+            <h4 class="weapon-name">Crossbow</h4>
+            <p class="weapon-desc">Damage per tembakan tertinggi, tidak butuh skill tinggi. Cocok untuk pemula. Waktu reload lama — harus akurat setiap tembakan. Pierce armor lebih baik dari bow.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:95%"></div></div><span class="stat-value">52p</span></div>
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:30%"></div></div><span class="stat-value">38</span></div>
+              <div class="stat-row"><span class="stat-label">Range</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div><span class="stat-value">85</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-arrow-up-right"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-throwing">Throwing</span></div>
+            </div>
+            <h4 class="weapon-name">Throwing Axe / Javelin</h4>
+            <p class="weapon-desc">Senjata lempar — ideal untuk pembuka sebelum melee. Javelin: damage lebih tinggi. Throwing Axe: speed lebih cepat. Jumlah terbatas, gunakan dengan bijak.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:72%"></div></div><span class="stat-value">45c</span></div>
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:78%"></div></div><span class="stat-value">88</span></div>
+              <div class="stat-row"><span class="stat-label">Stock</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:25%"></div></div><span class="stat-value">4–6</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-box info-note">
+          <span class="info-box-icon"><i class="ph-bold ph-info"></i></span>
+          <div class="info-box-content">
+            <h5>Damage Types di Warband</h5>
+            <p><strong style="color:#e8c878">Cut (c)</strong> — efektif vs unarmored. <strong style="color:#70a8e0">Pierce (p)</strong> — menembus armor, terbaik vs armor berat. <strong style="color:#80c080">Blunt (b)</strong> — pingsan, tidak membunuh, ideal untuk tawanan. Armor mengurangi Cut &gt; Pierce &gt; Blunt.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="combat">
+        <h2 class="content-section-title"><i class="ph-bold ph-sword"></i> Mekanis Tempur</h2>
+        <p class="content-section-desc">Sistem pertempuran Warband adalah salah satu yang paling dalam di genre action RPG. Kuasai semua mekanik ini untuk menjadi petarung handal.</p>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-shield"></i></span>
+          <div class="tactic-content">
+            <h4>Manual Block — Kunci Utama</h4>
+            <p>Warband memiliki 4 arah serangan dan blok: Atas, Bawah, Kiri, Kanan. Block harus dilakukan sesuai arah serangan musuh. Matikan auto-block di settings dan biasakan manual block — ini membedakan pemain biasa dari pemain expert.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Fundamental</span><span class="tactic-tag">Wajib Dikuasai</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-flag"></i></span>
+          <div class="tactic-content">
+            <h4>Couched Lance Charge</h4>
+            <p>Ketika berkuda dengan lance dalam posisi couched (panjang ke depan), serangan ini menghasilkan bonus damage dari momentum kuda. Pastikan kuda berlari penuh lurus ke musuh. Damage bisa mencapai 200+ pada hit sempurna. Jangan couched ke arah polearm musuh!</p>
+            <div class="tactic-tags"><span class="tactic-tag">Kavaleri</span><span class="tactic-tag">High Damage</span><span class="tactic-tag">Momentum</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-lightning"></i></span>
+          <div class="tactic-content">
+            <h4>Chamber Block (Advanced)</h4>
+            <p>Timing serangan yang tepat untuk memblok sekaligus menyerang balik dalam satu gerakan. Ini adalah teknik paling sulit namun paling efektif di duel. Stagger musuh dan buka celah untuk counter attack.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Advanced</span><span class="tactic-tag">Duel</span><span class="tactic-tag">Counter</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-fast-forward"></i></span>
+          <div class="tactic-content">
+            <h4>Footwork &amp; Arah Serangan</h4>
+            <p>Bergerak sambil menyerang menambah bonus damage. Serangan dari kanan ke kiri (backswing) biasanya lebih cepat tapi lebih lemah. Overhead attack paling lambat tapi mematikan. Serangan dari kiri ke kanan dengan momentum maju = damage tertinggi untuk most weapons.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Positioning</span><span class="tactic-tag">Damage Bonus</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-arrow-right"></i></span>
+          <div class="tactic-content">
+            <h4>Horse Archery (Panahan Berkuda)</h4>
+            <p>Teknik hit-and-run paling efektif di Warband. Kembangkan skill Riding 4+ dan Power Draw 3+. Berlari menjauhi musuh sambil menembak ke belakang (Parthian Shot). Hampir tidak terkalahkan jika dikuasai — musuh tidak bisa mengejar jika kuda lebih cepat.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Mobile</span><span class="tactic-tag">Hit-and-Run</span><span class="tactic-tag">Skill Intensive</span></div>
+          </div>
+        </div>
+
+        <div class="stats-table-wrap" style="margin-top:24px;">
+          <table class="stats-table">
+            <thead><tr><th>Arah Serangan</th><th>Tombol Default</th><th>Karakteristik</th><th>Terbaik Untuk</th></tr></thead>
+            <tbody>
+              <tr><td>Overhead (Atas)</td><td>W + Klik</td><td>Paling lambat, damage tertinggi</td><td>Musuh yang sedang diam/stagger</td></tr>
+              <tr><td>Left Swing (Kiri)</td><td>A + Klik</td><td>Medium speed, sweep lebar</td><td>Multiple musuh, kuda</td></tr>
+              <tr><td>Right Swing (Kanan)</td><td>D + Klik</td><td>Cepat, damage medium</td><td>Quick poke, combo</td></tr>
+              <tr><td>Thrust (Tusuk)</td><td>S + Klik</td><td>Pierce damage, reach jauh</td><td>Polearm, duel jarak</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="troops">
+        <h2 class="content-section-title"><i class="ph-bold ph-users"></i> Pasukan &amp; Rekrutmen</h2>
+        <p class="content-section-desc">Pasukan adalah aset terpenting. Rekrut di desa, tingkatkan lewat pertempuran, dan pilih upgrade tree yang sesuai dengan strategi kamu.</p>
+
+        <h3 style="color:var(--gold-light);margin:0 0 16px;font-size:1.1rem;">Khergit Khanate — Troop Tree</h3>
+        <div class="troop-tree">
+          <div class="troop-tier"><span class="tier-label">T1</span><div class="troop-row"><div class="troop-node">Khergit Tribesman</div></div></div>
+          <div class="troop-tier"><span class="tier-label">T2</span><div class="troop-row"><div class="troop-node">Khergit Horseman</div></div></div>
+          <div class="troop-tier"><span class="tier-label">T3</span><div class="troop-row"><div class="troop-node">Khergit Raider</div><div class="troop-node">Khergit Veteran</div></div></div>
+          <div class="troop-tier"><span class="tier-label">T4</span><div class="troop-row"><div class="troop-node">Khergit Lancer</div><div class="troop-node">Khergit Veteran Archer</div></div></div>
+          <div class="troop-tier"><span class="tier-label">T5</span><div class="troop-row"><div class="troop-node elite">Khergit Veteran Horse Archer ★</div></div></div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Swadian — Troop Tree</h3>
+        <div class="troop-tree">
+          <div class="troop-tier"><span class="tier-label">T1</span><div class="troop-row"><div class="troop-node">Swadian Recruit</div></div></div>
+          <div class="troop-tier"><span class="tier-label">T2</span><div class="troop-row"><div class="troop-node">Swadian Militia</div></div></div>
+          <div class="troop-tier"><span class="tier-label">T3</span><div class="troop-row"><div class="troop-node">Swadian Footman</div><div class="troop-node">Swadian Crossbowman</div></div></div>
+          <div class="troop-tier"><span class="tier-label">T4</span><div class="troop-row"><div class="troop-node">Swadian Infantry</div><div class="troop-node">Swadian Sharpshooter</div><div class="troop-node">Swadian Man-at-Arms</div></div></div>
+          <div class="troop-tier"><span class="tier-label">T5</span><div class="troop-row"><div class="troop-node elite">Swadian Knight ★</div></div></div>
+        </div>
+
+        <div class="stats-table-wrap" style="margin-top:24px;">
+          <table class="stats-table">
+            <thead><tr><th>Tipe Pasukan</th><th>Kekuatan</th><th>Kelemahan</th><th>Peran</th></tr></thead>
+            <tbody>
+              <tr><td>Infanteri Berat</td><td>Armor tinggi, HP besar</td><td>Lambat, mahal</td><td>Garis depan, pertahanan kastil</td></tr>
+              <tr><td>Pemanah</td><td>DPS jarak jauh</td><td>Lemah di melee</td><td>Berikan keunggulan sebelum melee</td></tr>
+              <tr><td>Kavaleri</td><td>Manuver, charge power</td><td>Mahal, mati vs tombak</td><td>Flanking, pengejaran</td></tr>
+              <tr><td>Horse Archer</td><td>Mobile, sulit ditangkap</td><td>Armor tipis, ammo terbatas</td><td>Harassment, hit-and-run</td></tr>
+              <tr><td>Crossbowman</td><td>Armor pierce, mudah dilatih</td><td>Reload lambat</td><td>Anti-kavaleri, sniper</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box info-tip">
+          <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
+          <div class="info-box-content">
+            <h5>Komposisi Optimal Party</h5>
+            <p>40% Infanteri berat (shield) → 30% Pemanah → 20% Kavaleri → 10% Pendukung/Companion. Selalu punya beberapa kavaleri untuk pengejaran musuh yang kabur.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="factions">
+        <h2 class="content-section-title"><i class="ph-bold ph-castle-turret"></i> 6 Faksi Calradia</h2>
+        <p class="content-section-desc">Setiap faksi punya gaya tempur, pasukan unggulan, dan lokasi geografis yang berbeda. Pilih berdasarkan playstyle kamu.</p>
+        <div class="faction-grid">
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-castle-turret"></i></span>
+            <h4 class="faction-name">Swadia</h4>
+            <p class="faction-desc">Faksi ksatria Eropa Barat. Kavaleri terbaik di dunia — Swadian Knight adalah pasukan elite paling tangguh. Berlokasi di tengah peta.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Swadian Knight terkuat</li><li>Armor berkualitas tinggi</li><li>Crossbow strong</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Mahal dipertahankan</li><li>Rentan vs tombak</li><li>Infantry biasa</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-drop"></i></span>
+            <h4 class="faction-name">Nords</h4>
+            <p class="faction-desc">Viking style — infanteri berat paling tangguh. Huscarl mereka adalah infanteri terbaik. Tidak ada kavaleri, murni kekuatan kaki.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Huscarl sangat kuat</li><li>Shield wall terbaik</li><li>Serangan pantai</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Tidak ada kavaleri</li><li>Lambat di peta dunia</li><li>Kurang range</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-crosshair"></i></span>
+            <h4 class="faction-name">Rhodoks</h4>
+            <p class="faction-desc">Pakar tombak dan crossbow. Spearman Rhodok adalah anti-kavaleri terbaik. Crossbowman-nya sangat mematikan di pertempuran terbuka.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Anti-kavaleri terbaik</li><li>Sharpshooter kuat</li><li>Pertahanan kastil solid</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Tidak ada kavaleri kuat</li><li>Lambat offensif</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-flag"></i></span>
+            <h4 class="faction-name">Khergit Khanate</h4>
+            <p class="faction-desc">Nomad Mongol-style. Horse Archer terbaik — hampir tidak terkalahkan di medan terbuka. Kelincahan dan kecepatan adalah kunci strategi mereka.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Horse archer terbaik</li><li>Kecepatan tinggi</li><li>Harassment efektif</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Lemah di pengepungan</li><li>Tipis armor</li><li>Kota sedikit</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-moon"></i></span>
+            <h4 class="faction-name">Sarranid Sultanate</h4>
+            <p class="faction-desc">Faksi Timur Tengah — campuran infantry dan kavaleri kuat. Mamluke mereka adalah kavaleri sabre yang mematikan. Lokasi di padang pasir selatan.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Kavaleri sabre kuat</li><li>Armor berat infantry</li><li>Archer cukup baik</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Lokasi terpencil</li><li>Crossbow kurang</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-star"></i></span>
+            <h4 class="faction-name">Vaegirs</h4>
+            <p class="faction-desc">Rusia/Skandinavia style — marksman terbaik di game. Vaegir Marksman dengan War Bow adalah mimpi buruk kavaleri manapun.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Marksman terbaik</li><li>Infantry solid</li><li>Panah volume tinggi</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Kavaleri biasa</li><li>Butuh formasi baik</li></ul></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="tactics">
+        <h2 class="content-section-title"><i class="ph-bold ph-crosshair"></i> Taktik Pertempuran</h2>
+        <p class="content-section-desc">Memenangkan pertempuran bukan hanya soal kekuatan — formasi, positioning, dan timing adalah kunci kemenangan.</p>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-target"></i></span>
+          <div class="tactic-content">
+            <h4>Taktik Anvil &amp; Hammer</h4>
+            <p>Infanteri berat (anvil/landasan) bergerak maju menahan musuh. Sementara kavaleri (hammer/palu) mengepung dari sisi dan belakang. Pemanah mendukung dari belakang garis infanteri. Taktik klasik dan paling efektif untuk pasukan campuran.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Klasik</span><span class="tactic-tag">Mixed Army</span><span class="tactic-tag">Flanking</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-shield-check"></i></span>
+          <div class="tactic-content">
+            <h4>Shield Wall Formation</h4>
+            <p>Perintahkan infanteri untuk hold position dengan Shield Wall. Efektif melawan serangan ranged. Pemanah musuh tidak efektif vs shield wall yang solid. Lalu kirim kavaleri dari sisi ketika musuh terkunci menyerang shield wall.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Defensif</span><span class="tactic-tag">Anti-Ranged</span><span class="tactic-tag">Nords Best</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-flag"></i></span>
+          <div class="tactic-content">
+            <h4>Cavalry Rush Awal</h4>
+            <p>Langsung charge kavaleri ke pemanah musuh di awal pertempuran sebelum mereka sempat menembak. Hancurkan ranged support mereka, lalu fokus ke infanteri. Efektif jika kavaleri kamu lebih cepat dan kuat dari pemanah lawan.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Agresif</span><span class="tactic-tag">Anti-Ranged</span><span class="tactic-tag">Early Game</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-map-trifold"></i></span>
+          <div class="tactic-content">
+            <h4>High Ground Advantage</h4>
+            <p>Selalu ambil posisi tinggi jika memungkinkan. Pemanah di atas bukit memiliki range lebih jauh dan lebih akurat. Infanteri di bukit mendapat keuntungan dalam pertarungan melee. Musuh yang menyerang ke atas lebih lambat dan rentan.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Terrain</span><span class="tactic-tag">Defensif</span><span class="tactic-tag">Ranged Buff</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="skills">
+        <h2 class="content-section-title"><i class="ph-bold ph-trend-up"></i> Skill &amp; Atribut</h2>
+        <p class="content-section-desc">Karakter punya 4 atribut dan banyak skill. Fokus pada atribut yang mendukung playstyle utamamu — jangan spread terlalu lebar di awal.</p>
+
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Atribut</th><th>Skill yang Dipengaruhi</th><th>Untuk Build</th></tr></thead>
+            <tbody>
+              <tr><td>Strength (STR)</td><td>Power Strike, Athletics, Power Draw, Power Throw, Iron Flesh</td><td>Melee fighter, tanker</td></tr>
+              <tr><td>Agility (AGI)</td><td>Weapon Master, Shield, Riding, Horse Archery, Looting</td><td>Cavalry, archer</td></tr>
+              <tr><td>Intelligence (INT)</td><td>Engineer, First Aid, Wound Treatment, Surgery, Trade, Tactics</td><td>Commander, support</td></tr>
+              <tr><td>Charisma (CHA)</td><td>Leadership, Persuasion, Prisoner Management, Spotting</td><td>Lord, diplomat</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Skill Prioritas Tertinggi</h3>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><span class="skill-icon"><i class="ph-bold ph-barbell"></i></span><h5>Power Strike</h5><p>+8% damage melee per level. Wajib untuk fighter. Max di STR tinggi.</p></div>
+          <div class="skill-card reveal"><span class="skill-icon"><i class="ph-bold ph-target"></i></span><h5>Power Draw</h5><p>Buka slot bow tier lebih tinggi. Max untuk archer build.</p></div>
+          <div class="skill-card reveal"><span class="skill-icon"><i class="ph-bold ph-first-aid"></i></span><h5>Surgery</h5><p>Kurangi chance pasukan mati setelah KO. Wajib untuk commander.</p></div>
+          <div class="skill-card reveal"><span class="skill-icon"><i class="ph-bold ph-crown"></i></span><h5>Leadership</h5><p>Tambah jumlah pasukan maksimum. Sangat penting untuk army besar.</p></div>
+          <div class="skill-card reveal"><span class="skill-icon"><i class="ph-bold ph-strategy"></i></span><h5>Tactics</h5><p>Kurangi jumlah pasukan musuh dalam pertempuran (advantage calculation).</p></div>
+          <div class="skill-card reveal"><span class="skill-icon"><i class="ph-bold ph-flag"></i></span><h5>Riding</h5><p>Buka akses kuda lebih baik. Riding 6+ untuk kuda terbaik game.</p></div>
+          <div class="skill-card reveal"><span class="skill-icon"><i class="ph-bold ph-coins"></i></span><h5>Trade</h5><p>Tingkatkan profit trading. Wajib di awal game untuk pengumpulan modal.</p></div>
+          <div class="skill-card reveal"><span class="skill-icon"><i class="ph-bold ph-sword"></i></span><h5>Weapon Master</h5><p>Tambah proficiency semua senjata. Lebih cepat unlock tier senjata tinggi.</p></div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="economy">
+        <h2 class="content-section-title"><i class="ph-bold ph-coins"></i> Ekonomi &amp; Perdagangan</h2>
+        <p class="content-section-desc">Uang adalah masalah terbesar di Warband. Gaji pasukan terus menguras kas. Kelola dengan bijak untuk mempertahankan army.</p>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-storefront"></i></span>
+          <div class="tactic-content">
+            <h4>Trading Route Optimal</h4>
+            <p>Beli barang murah di satu kota, jual mahal di kota lain. Rute terbaik: Beli Salt &amp; Iron di kota tambang, jual di kota besar. Skill Trade meningkatkan profit margin. Selalu periksa harga di menu "Trade" sebelum membeli massal.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Ekonomi</span><span class="tactic-tag">Early Game</span><span class="tactic-tag">Passive Income</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-castle-turret"></i></span>
+          <div class="tactic-content">
+            <h4>Sumber Income Kerajaan</h4>
+            <p>Setelah punya Fief (desa/kastil/kota): Tarif pajak dari kota, upeti dari desa bawahan. Bangun Improvements (Mill, Granary, dll) untuk meningkatkan output. Kota menghasilkan 400-2000+ gold/minggu tergantung ukuran dan kondisi.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Late Game</span><span class="tactic-tag">Passive</span><span class="tactic-tag">Fief</span></div>
+          </div>
+        </div>
+
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Sumber Income</th><th>Estimasi/Minggu</th><th>Requirements</th></tr></thead>
+            <tbody>
+              <tr><td>Trading</td><td>500–5000</td><td>Trade skill + modal awal</td></tr>
+              <tr><td>Rampasan (Loot)</td><td>300–2000</td><td>Menang pertempuran</td></tr>
+              <tr><td>Tawanan dijual</td><td>200–1000</td><td>Mace, Prisoner Mgmt</td></tr>
+              <tr><td>Quest reward</td><td>500–3000</td><td>Reputation baik</td></tr>
+              <tr><td>Desa Fief</td><td>300–600</td><td>Punya fief</td></tr>
+              <tr><td>Kota Fief</td><td>1000–3000</td><td>Punya kota</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="kingdom">
+        <h2 class="content-section-title"><i class="ph-bold ph-crown"></i> Mendirikan Kerajaan</h2>
+        <p class="content-section-desc">Mimpi utama di Warband — menjadi Raja Calradia sendiri. Ini proses panjang yang membutuhkan persiapan matang.</p>
+
+        <div class="info-box info-warn">
+          <span class="info-box-icon"><i class="ph-bold ph-warning"></i></span>
+          <div class="info-box-content">
+            <h5>Syarat Mendirikan Kerajaan Sendiri</h5>
+            <p>Perlu Renown 500+, punya minimal 1 fief (kastil/kota), dan salah satu dari: memenangkan Tournamen 3x berturut-turut ATAU memiliki hubungan baik dengan beberapa lord yang mau join kerajaanmu.</p>
+          </div>
+        </div>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-map-trifold"></i></span>
+          <div class="tactic-content">
+            <h4>Langkah Mendirikan Kerajaan</h4>
+            <p><strong style="color:var(--gold-light)">1. Renown Building</strong> — Ikuti turnamen, menangkan pertempuran besar, selesaikan quest. Renown adalah reputasi kamu di dunia.<br><br>
+            <strong style="color:var(--gold-light)">2. Bergabung Faksi Dahulu</strong> — Dapatkan fief (kastil) sebagai vassal. Kemudian deklarasikan independen dan pertahankan kastil dari mantan rajamu.<br><br>
+            <strong style="color:var(--gold-light)">3. Menikah</strong> — Nikahi lady bangsawan untuk mendapat dukungan politik dan bonus relation dengan faksi mereka.<br><br>
+            <strong style="color:var(--gold-light)">4. Rekrut Lord</strong> — Tawarkan fief kepada lord-lord yang kecewa dengan raja mereka. Beri mereka tanah sebagai imbalan kesetiaan.<br><br>
+            <strong style="color:var(--gold-light)">5. Ekspansi</strong> — Perang secara strategis, satu musuh pada satu waktu. Jangan buka terlalu banyak front perang bersamaan.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Late Game</span><span class="tactic-tag">Long Term</span><span class="tactic-tag">Political</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="companions">
+        <h2 class="content-section-title"><i class="ph-bold ph-handshake"></i> Companions Warband</h2>
+        <p class="content-section-desc">Companion adalah karakter unik yang bisa kamu rekrut di tavern. Mereka punya background, kepribadian, skill, dan bahkan bisa konflik satu sama lain. Total ada 16 companion di Warband.</p>
+
+        <div class="info-box info-note">
+          <span class="info-box-icon"><i class="ph-bold ph-info"></i></span>
+          <div class="info-box-content">
+            <h5>Cara Merekrut Companion</h5>
+            <p>Pergi ke kota atau desa besar &rarr; masuk <strong>Tavern</strong> &rarr; cari NPC bernama khusus (bukan Peasant). Biaya rekrut bervariasi tergantung reputasimu. Companion yang ditolak atau dipecat bisa pergi ke faksi lain dan sulit ditemukan kembali.</p>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Semua 16 Companion &amp; Spesialisasinya</h3>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Nama</th><th>Lokasi Awal</th><th>Skill Unggulan</th><th>Peran Terbaik</th><th>Catatan</th></tr></thead>
+            <tbody>
+              <tr><td><strong style="color:#e8c878">Marnid</strong></td><td>Tersebar (banyak kota)</td><td>Trade 4, Persuasion 3</td><td>Pedagang, reduce penalty saat negosiasi</td><td>Salah satu companion termudah ditemukan</td></tr>
+              <tr><td><strong style="color:#e8c878">Borcha</strong></td><td>Zendar (awal game)</td><td>Tracking 4, Spotting 4, Looting 3</td><td>Scout &amp; tracker — wajib awal game</td><td>Companion pertama yang bisa direkrut</td></tr>
+              <tr><td><strong style="color:#e8c878">Rolf</strong></td><td>Berbagai kota besar</td><td>Surgery 4, First Aid 3, Wound Treatment 3</td><td>Healer party — wajib mutlak</td><td>Surgery 4 = kurangi kematian 40%</td></tr>
+              <tr><td><strong style="color:#e8c878">Baheshtur</strong></td><td>Wilayah Khergit</td><td>Horse Archery 5, Riding 5, Tracking 3</td><td>Horse archer &amp; recon terbaik</td><td>Stats horse archery tertinggi</td></tr>
+              <tr><td><strong style="color:#e8c878">Nizar</strong></td><td>Wilayah Sarranid</td><td>One-Handed 6, Athletics 5, Looting 4</td><td>Fighter elite + looter pasca perang</td><td>Combat stats tertinggi dari semua companion</td></tr>
+              <tr><td><strong style="color:#e8c878">Ymira</strong></td><td>Wilayah Nord</td><td>First Aid 4, Trade 3, Persuasion 2</td><td>Healer backup &amp; trader</td><td>Konflik dengan Firentis jika keduanya ada</td></tr>
+              <tr><td><strong style="color:#e8c878">Firentis</strong></td><td>Wilayah Swadia</td><td>Two-Handed 5, Athletics 4, Leadership 2</td><td>Melee DPS &amp; infanteri commander</td><td>Suka berkelahi dengan companion lain</td></tr>
+              <tr><td><strong style="color:#e8c878">Bunduk</strong></td><td>Wilayah Nords/Vaegir</td><td>Crossbow 5, Wound Treatment 3, Engineering 2</td><td>Crossbow specialist &amp; healer</td><td>Terbaik untuk crossbow army</td></tr>
+              <tr><td><strong style="color:#e8c878">Jeremus</strong></td><td>Berbagai kota</td><td>Surgery 5, Wound Treatment 4, First Aid 4</td><td>Healer terbaik di game</td><td>Surgery 5 = tertinggi, wajib punya</td></tr>
+              <tr><td><strong style="color:#e8c878">Klethi</strong></td><td>Wilayah Khergit</td><td>Pathfinding 4, Spotting 3, Athletics 4</td><td>Scout &amp; pathfinder — speed peta dunia</td><td>Wanita companion, meningkatkan kecepatan party</td></tr>
+              <tr><td><strong style="color:#e8c878">Lezalit</strong></td><td>Wilayah Vaegir</td><td>Tactics 5, Leadership 3, Two-Handed 4</td><td>Taktisi &amp; commander armada</td><td>Tactics 5 = bonus besar di battle calculations</td></tr>
+              <tr><td><strong style="color:#e8c878">Matheld</strong></td><td>Wilayah Nord/Vaegir</td><td>Two-Handed 5, Riding 4, Leadership 2</td><td>Kavaleri melee &amp; commander</td><td>Wanita companion, fighter sangat kuat</td></tr>
+              <tr><td><strong style="color:#e8c878">Deshavi</strong></td><td>Wilayah Vaegir</td><td>Tracking 5, Spotting 4, Pathfinding 3</td><td>Scout master — tracking sempurna</td><td>Tracking 5 = bisa lacak semua musuh</td></tr>
+              <tr><td><strong style="color:#e8c878">Alayen</strong></td><td>Wilayah Swadia</td><td>Riding 5, Horse Archery 4, Persuasion 3</td><td>Kavaleri &amp; diplomat</td><td>Cepat naik level, berguna di diplomasi</td></tr>
+              <tr><td><strong style="color:#e8c878">Artimenner</strong></td><td>Wilayah Empire/Swadia</td><td>Engineering 5, Trade 3, Persuasion 2</td><td>Siege engineer terbaik</td><td>Engineering 5 = siege tercepat di game</td></tr>
+              <tr><td><strong style="color:#e8c878">Katrin</strong></td><td>Wilayah Rhodok</td><td>Persuasion 4, Trade 3, First Aid 2</td><td>Diplomat &amp; trader</td><td>Persuasion tertinggi, ideal untuk negosiasi lord</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:28px 0 16px;font-size:1.1rem;">Komposisi 4 Companion Wajib</h3>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-first-aid"></i></span>
+          <div class="tactic-content">
+            <h4>1. Surgeon — Surgery 5 (Wajib Mutlak)</h4>
+            <p><strong style="color:var(--gold-light)">Jeremus</strong> adalah pilihan terbaik dengan Surgery 5. Setiap poin Surgery mengurangi chance pasukan mati permanen setelah KO. Surgery 5 = 40% chance selamat tambahan. Tanpa surgeon, army kamu akan habis cepat dalam kampanye panjang. Prioritas pertama!</p>
+            <div class="tactic-tags"><span class="tactic-tag">Wajib #1</span><span class="tactic-tag">Jeremus/Rolf</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-binoculars"></i></span>
+          <div class="tactic-content">
+            <h4>2. Scout/Tracker — Tracking + Spotting 4+</h4>
+            <p><strong style="color:var(--gold-light)">Borcha</strong> atau <strong style="color:var(--gold-light)">Deshavi</strong>. Tracking membuat kamu bisa melihat jejak musuh di peta dunia. Spotting meningkatkan jarak pandang terhadap party musuh. Tanpa ini, kamu sering terkejut oleh party musuh besar yang tiba-tiba muncul dekat.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Wajib #2</span><span class="tactic-tag">Borcha/Deshavi</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-wrench"></i></span>
+          <div class="tactic-content">
+            <h4>3. Engineer — Engineering 4+</h4>
+            <p><strong style="color:var(--gold-light)">Artimenner</strong> dengan Engineering 5 adalah pilihan terbaik. Engineer sangat penting untuk siege — mengurangi waktu bangun equipment dari berhari-hari menjadi hitungan jam. Juga meningkatkan efisiensi pertahanan kastilmu. Tanpa engineer, siege akan sangat lambat dan melelahkan.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Wajib #3</span><span class="tactic-tag">Artimenner</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-coins"></i></span>
+          <div class="tactic-content">
+            <h4>4. Trader — Trade 4+</h4>
+            <p><strong style="color:var(--gold-light)">Marnid</strong> atau <strong style="color:var(--gold-light)">Ymira</strong>. Trade skill companion stacks dengan trade-mu sendiri untuk memberi discount di merchant dan meningkatkan profit jual loot &amp; barang dagang. Sangat berguna di awal game saat keuangan masih terbatas.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Wajib #4</span><span class="tactic-tag">Marnid/Ymira</span></div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Konflik Antar Companion</h3>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Companion A</th><th>Companion B</th><th>Alasan Konflik</th><th>Solusi</th></tr></thead>
+            <tbody>
+              <tr><td>Ymira</td><td>Firentis</td><td>Kepribadian bertolak belakang</td><td>Pilih salah satu, jangan kombinasikan</td></tr>
+              <tr><td>Jeremus</td><td>Nizar</td><td>Background berbeda (agama/ideologi)</td><td>Intervensi dengan Persuasion tinggi</td></tr>
+              <tr><td>Matheld</td><td>Alayen</td><td>Persaingan status</td><td>Berikan item bagus ke salah satu sebagai hadiah</td></tr>
+              <tr><td>Lezalit</td><td>Baheshtur</td><td>Pandangan taktis berbeda</td><td>High Persuasion atau pilih salah satu</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box info-tip">
+          <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
+          <div class="info-box-content">
+            <h5>Tips Companion Lanjutan</h5>
+            <p>Companion bisa dijadikan pemimpin party terpisah (Sergeant) — pastikan mereka punya Leadership skill. Equip companion dengan armor dan senjata terbaik yang kamu punya. Companion yang diabaikan dan tidak diequip dengan baik akan sering mati dalam pertempuran.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ QUESTS ═══════════════════════════ -->
+      <section class="content-section reveal" id="quests">
+        <h2 class="content-section-title"><i class="ph-bold ph-scroll"></i> Quests &amp; Misi Warband</h2>
+        <p class="content-section-desc">Warband memiliki sistem quest yang berbasis reputation dan relasi. Quest datang dari lord, village elder, merchant, dan quest khusus untuk menikah atau mendirikan kerajaan.</p>
+
+        <h3 style="color:var(--gold-light);margin:0 0 16px;font-size:1.15rem;">QUESTS DARI DESA (Village Quests)</h3>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Quest</th><th>Diberikan Oleh</th><th>Tugas</th><th>Reward</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Deliver Grain</strong></td><td>Village Elder</td><td>Antar makanan ke desa yang kelaparan dalam X hari</td><td>Relation +8 dengan desa, Gold kecil</td></tr>
+              <tr><td><strong>Find Cattle</strong></td><td>Village Elder</td><td>Temukan dan kembalikan sapi yang dicuri bandit</td><td>Relation +6 dengan desa</td></tr>
+              <tr><td><strong>Kill Looters</strong></td><td>Village Elder</td><td>Hancurkan kelompok looter yang menyerang desa</td><td>Relation +5, Gold 200–500</td></tr>
+              <tr><td><strong>Train Militia</strong></td><td>Village Elder</td><td>Bantu latih milisi desa (simulasi pertarungan)</td><td>Relation +4, XP skill</td></tr>
+              <tr><td><strong>Escort Merchant</strong></td><td>Merchant Desa</td><td>Kawal merchant ke kota tujuan, jaga dari serangan</td><td>Gold 500–1000 + Relation</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:28px 0 16px;font-size:1.15rem;">QUESTS DARI LORD &amp; BANGSAWAN</h3>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-crown"></i></span>
+          <div class="tactic-content">
+            <h4>Misi Andalan dari Lord</h4>
+            <ul style="margin-top:8px;padding-left:20px;line-height:2.1;">
+              <li><strong style="color:var(--gold-light)">Rescue Prisoner</strong> — Bebasin lord yang lagi ditawan musuh. Seru banget karena kamu nyusup ke kastil, lumpuhin penjaga, dan rebut kunci. Kalau berhasil, lord itu bakal respek parah (Relation +15) dan fraksinya juga seneng.</li>
+              <li><strong style="color:var(--gold-light)">Deliver Message</strong> — Disuruh jadi kurir nganter surat. Simpel, cepat, lumayan buat dapet relation kecil awal-awal main.</li>
+              <li><strong style="color:var(--gold-light)">Slay Outlaw</strong> — Disuruh bunuh target buronan spesifik. Di sini skill Tracker kamu bakal kerasa gunanya buat ngelacak jejak si target di map world.</li>
+              <li><strong style="color:var(--gold-light)">Destroy Bandit Lair</strong> — Serbu markas persembunyian bandit yang susah dicari. Hadiah uangnya gede banget plus dapet tambahan Renown.</li>
+              <li><strong style="color:var(--gold-light)">Collect Taxes</strong> — Lord nyuruh kamu nagih pajak dari desanya. Yang bikin seru, kamu bisa nahan sebagian besar uangnya buat modal awal (walau relation bisa turun dan lord-nya bakal kesel banget kalau tahu).</li>
+              <li><strong style="color:var(--gold-light)">Conduct Tournament</strong> — Lord nyuruh kamu ikutan turnamen di kota tertentu dan menangin buat naikin pamor fraksinya.</li>
+            </ul>
+            <div class="tactic-tags"><span class="tactic-tag">Naikin Relation</span><span class="tactic-tag">Dapet Renown</span></div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:28px 0 16px;font-size:1.15rem;">SISTEM TURNAMEN (Tournament)</h3>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-trophy"></i></span>
+          <div class="tactic-content">
+            <h4>Ngelaut Renown &amp; Uang Lewat Turnamen</h4>
+            <p>Turnamen bakal sering banget diadakan di kota besar. Ini kesempatan emas! Pas masuk arena, senjata dan kudamu bakal disesuaikan sama aturan panitia secara acak (bisa aja kamu yang spesialis panah malah disuruh pakai pedang kayu dua tangan). Kalau kamu sering bertaruh 100 dinar ke diri sendiri dan menang terus sampai ronde akhir, hadiahnya bisa tembus <strong style="color:var(--gold-light)">3.000+ Dinar</strong> dan bonus <strong style="color:var(--gold-light)">Renown gede</strong>.</p>
+            <ul style="margin-top:10px;padding-left:20px;line-height:2;">
+              <li><strong>Ronde Tim</strong>: Kadang 4v4, kadang malah campur aduk 8v8. Jangan asal maju, biarin NPC saling bunuh dulu biar darah kamu awet.</li>
+              <li><strong>Ronde Solo/Duel</strong>: Pertarungan mekanik 1 lawan 1, wajib jago block!</li>
+            </ul>
+            <div class="tactic-tags"><span class="tactic-tag">Tambang Emas Awal</span><span class="tactic-tag">Uji Mekanik</span></div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:28px 0 16px;font-size:1.15rem;">MISI KHUSUS — ROMANSA &amp; KUDETA</h3>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-heart"></i></span>
+          <div class="tactic-content">
+            <h4>Menikah sama Bangsawan (Marriage Quest)</h4>
+            <p>Mau dapet power politik instan? Nikah jawabannya. Tapi jalannya panjang banget:</p>
+            <ul style="margin-top:8px;padding-left:20px;line-height:2;">
+              <li>Kamu harus sering menang turnamen trus dedikasiin kemenanganmu ke Lady/Lord incaran biar dia baper.</li>
+              <li>Belajar baca puisi dari para pengamen di tavern buat ngerayu mereka waktu ketemuan sembunyi-sembunyi.</li>
+              <li>Minta izin restu ke ayahnya/kakaknya (Wali). Kalau relation kamu jelek sama si Wali, siap-siap ditolak.</li>
+              <li>Kadang ada "rival" (lord lain yang juga naksir), dan kamu disuruh duel 1v1 demi memperebutkan cintanya! Ngeri bos.</li>
+            </ul>
+            <div class="tactic-tags"><span class="tactic-tag">Main Politik</span><span class="tactic-tag">Relasi Faksi</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-scales"></i></span>
+          <div class="tactic-content">
+            <h4>Rebut Tahta Calradia! (Endgame Quest)</h4>
+            <p>Ini ibarat quest "Tamatnya" Warband. Menguasai seluruh peta bukan perkara nyerang kota satu-satu aja, ada seninya:</p>
+            <ul style="margin-top:8px;padding-left:20px;line-height:2;">
+              <li>Cari alesan buat ngambek sama Rajamu (misalnya dia nggak mau kasih kastil yang baru aja kamu rebut mati-matian), lalu deklarasi kemerdekaan!</li>
+              <li>Bujuk lord dari fraksi musuh buat khianatin rajanya dan gabung sama kerajaamu. Kamu butuh skill Persuasion tinggi dan argumen yang pas (contoh: ngejanjiin tanah, atau ngomongin soal keadilan).</li>
+              <li>Atur menterimu, kelola hubungan lord biar nggak pada iri pas pembagian tanah, sambil tetep menahan gempuran perang dari faksi-faksi besar. Gila rasanya!</li>
+            </ul>
+            <div class="tactic-tags"><span class="tactic-tag">Endgame Asli</span><span class="tactic-tag">Manajemen Konflik</span></div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:28px 0 16px;font-size:1.15rem;">QUESTS DARI GUILD MASTER</h3>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Tugas / Misi</th><th>Disuruh Ngapain?</th><th>Keuntungannya</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Caravan Ambush</strong></td><td>Jagain rute dagang yang sering disergap atau lindungin karavan spesifik.</td><td>Uang lumayan gede (1000-3000)</td></tr>
+              <tr><td><strong>Troublesome Gang</strong></td><td>Ada geng lokal yang meresahin pedagang kota, habisi mereka!</td><td>Relation kota naik, enak buat bikin pabrik</td></tr>
+              <tr><td><strong>Locate Missing Merchant</strong></td><td>Cari pedagang malang yang kena culik bandit tebusan.</td><td>Pahala dan duit!</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box info-tip">
+          <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
+          <div class="info-box-content">
+            <h5>Tips Misi Rahasia</h5>
+            <p>Kalau kamu pengen gabung ke suatu fraksi, sering-sering aja ngerjain misi dari desa-desa di sekitar ibukota fraksi tersebut. Desa yang relation-nya udah +20 ke atas bisa ngasih volunteer pasukan 2x lebih banyak, kadang malah langsung dapet prajurit yang udah ter-upgrade (langsung tier 2/3)!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="siege">
+        <h2 class="content-section-title"><i class="ph-bold ph-shield-check"></i> Pengepungan Kastil</h2>
+        <p class="content-section-desc">Siege adalah salah satu aspek paling dramatis Warband. Butuh persiapan yang matang untuk menghancurkan pertahanan musuh.</p>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-wrench"></i></span>
+          <div class="tactic-content">
+            <h4>Persiapan Siege</h4>
+            <p>Bawa pasukan minimal 2x jumlah defender. Pastikan punya Engineer skill tinggi (companion) untuk membangun siege equipment lebih cepat. Siege Tower dan Battering Ram adalah pilihan utama. Trebuchet efektif tapi butuh waktu lama.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Persiapan</span><span class="tactic-tag">Engineer</span><span class="tactic-tag">Equipment</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-lightning"></i></span>
+          <div class="tactic-content">
+            <h4>Taktik Assault</h4>
+            <p>Saat pintu/dinding jebol — prioritaskan mendorong musuh dari gate. Jaga infanteri di depan, pemanah cover dari belakang. Saat di dalam kastil, jangan biarkan musuh berkumpul kembali di courtyard. Push agresif dan take high ground dengan segera.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Assault</span><span class="tactic-tag">Infantry First</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="tips">
+        <h2 class="content-section-title"><i class="ph-bold ph-lightbulb"></i> Tips &amp; Trik Warband</h2>
+        <div class="tips-grid" style="margin-top:8px">
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-trophy"></i></div><h4>Save Scum Turnamen</h4><p>Simpan sebelum masuk turnamen, ulangi sampai menang. Hadiah 1000+ gold dan renown sangat berharga di early game.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-plant"></i></div><h4>Rekrut di Desa</h4><p>Rekrut pasukan dari desa yang punya relation baik denganmu. Biaya rekrut lebih murah dan availability lebih banyak.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-heart"></i></div><h4>Menikah Penting!</h4><p>Nikahi lady faksi kuat untuk bonus relation. Beri hadiah mahal dan menang duel untuk suitor-nya.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-shield"></i></div><h4>Jangan Ceroboh Bergabung</h4><p>Pilih faksi dengan territory yang aman dan jauh dari faksi kuat lainnya. Nords atau Khergit sering lebih mudah dipertahankan.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-star"></i></div><h4>Renown dari Duel</h4><p>Tantang lord musuh dalam single combat saat pertempuran. Menang duel besar = renown besar, kalah = tidak ada konsekuensi serius.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-arrows-clockwise"></i></div><h4>Tukar Prisoner</h4><p>Lord yang kamu tangkap bisa ditukar ransom atau dilepas untuk mendapat relation bonus. Melepas lord musuh saat menang besar sangat meningkatkan reputasi.</p></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon"><i class="ph-bold ph-sword"></i></span>
+          <span class="logo-text">M&amp;B Guide</span>
+          <p class="footer-tagline">Panduan komunitas fan-made. Bukan afiliasi resmi TaleWorlds.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Halaman</h5>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="fire-and-sword.html">Fire &amp; Sword</a></li>
+            <li><a href="bannerlord.html">Bannerlord</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Seksi</h5>
+          <ul>
+            <li><a href="#weapons">Senjata</a></li>
+            <li><a href="#tactics">Taktik</a></li>
+            <li><a href="#factions">Faksi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 M&amp;B Guide — Dibuat dengan <i class="ph-fill ph-heart" style="color:var(--fas-primary);font-size:0.9rem;"></i> untuk komunitas Mount &amp; Blade Indonesia</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

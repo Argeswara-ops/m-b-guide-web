@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Panduan lengkap Mount & Blade: With Fire and Sword — senjata api, musket, pistol, taktik, faksi, dan semua mekanis unik game ini." />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Fire &amp; Sword — Panduan Lengkap | M&B Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body class="fas-theme">
+  <canvas id="particles-canvas"></canvas>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-icon"><i class="ph-bold ph-sword"></i></span>
+        <span class="logo-text">M&amp;B Guide</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="warband.html" class="nav-link">Warband</a></li>
+        <li><a href="fire-and-sword.html" class="nav-link active">Fire &amp; Sword</a></li>
+        <li><a href="bannerlord.html" class="nav-link">Bannerlord</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="game-hero">
+    <div class="game-hero-content">
+      <span class="game-hero-tag">Dirilis 2011 &bull; Rzeczpospolita Setting</span>
+      <h1 class="game-hero-title">With Fire &amp; Sword</h1>
+      <p class="game-hero-subtitle">Eropa Timur abad ke-17 — ketika senjata api merambah medan perang. Panduan lengkap senjata, taktik bubuk mesiu, dan mekanis unik Fire &amp; Sword.</p>
+    </div>
+  </section>
+
+  <div class="content-layout">
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <p class="sidebar-nav-title">Daftar Isi</p>
+        <ul>
+          <li><a href="#overview" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-book-open"></i></span> Overview</a></li>
+          <li><a href="#firearms" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-crosshair"></i></span> Senjata Api</a></li>
+          <li><a href="#melee-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-sword"></i></span> Senjata Melee</a></li>
+          <li><a href="#factions-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-castle-turret"></i></span> Faksi</a></li>
+          <li><a href="#combat-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-sword"></i></span> Mekanis Tempur</a></li>
+          <li><a href="#tactics-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-crosshair"></i></span> Taktik</a></li>
+          <li><a href="#troops-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-users"></i></span> Pasukan</a></li>
+          <li><a href="#economy-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-coins"></i></span> Ekonomi</a></li>
+          <li><a href="#companions-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-handshake"></i></span> Companions</a></li>
+          <li><a href="#quests-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-scroll"></i></span> Quest &amp; Story</a></li>
+          <li><a href="#tips-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-lightbulb"></i></span> Tips &amp; Trik</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <section class="content-section reveal" id="overview">
+        <h2 class="content-section-title"><i class="ph-bold ph-book-open"></i> Tentang Fire &amp; Sword</h2>
+        <p class="content-section-desc">With Fire &amp; Sword adalah standalone expansion yang berbeda dari Warband — berlatar di Eropa Timur abad ke-17 berdasarkan novel "Ogniem i Mieczem" karya Henryk Sienkiewicz.</p>
+
+        <div class="info-box info-note">
+          <span class="info-box-icon"><i class="ph-bold ph-info"></i></span>
+          <div class="info-box-content">
+            <h5>Apa yang Berbeda dari Warband?</h5>
+            <p>Fire &amp; Sword memperkenalkan <strong>senjata api (musket, pistol, granat)</strong>, sistem quest yang lebih naratif, senjata melee bertema sabre &amp; hussar, dan faksi-faksi khusus Eropa Timur seperti Polandia-Lithuania, Swedia, Cossack, Crimean Tatars, dan Moskow.</p>
+          </div>
+        </div>
+
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Aspek</th><th>Warband</th><th>Fire &amp; Sword</th></tr></thead>
+            <tbody>
+              <tr><td>Setting</td><td>Fantasi abad pertengahan</td><td>Eropa Timur nyata, abad 17</td></tr>
+              <tr><td>Senjata Api</td><td>Tidak ada</td><td>Musket, pistol, granat</td></tr>
+              <tr><td>Quest</td><td>Procedural/generic</td><td>Story-driven, bab per bab</td></tr>
+              <tr><td>Faksi</td><td>6 fiksi</td><td>5 berdasarkan sejarah nyata</td></tr>
+              <tr><td>Multiplayer</td><td>Robust</td><td>Terbatas</td></tr>
+              <tr><td>Mod Support</td><td>Sangat banyak</td><td>Lebih sedikit</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="firearms">
+        <h2 class="content-section-title"><i class="ph-bold ph-crosshair"></i> Senjata Api — Mekanis Baru</h2>
+        <p class="content-section-desc">Senjata api adalah penambahan revolusioner Fire &amp; Sword. Pahami reload mechanic, range, dan kapan menggunakannya untuk efek maksimal.</p>
+
+        <div class="info-box info-warn">
+          <span class="info-box-icon"><i class="ph-bold ph-warning"></i></span>
+          <div class="info-box-content">
+            <h5>Mekanis Reload Penting!</h5>
+            <p>Senjata api butuh waktu reload yang sangat lama. Pastikan selalu reload sebelum pertempuran dimulai! Jika kosong di tengah pertempuran, beralih ke senjata melee segera. Jangan reload di depan musuh yang bergerak maju.</p>
+          </div>
+        </div>
+
+        <div class="weapons-grid">
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-crosshair"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-firearm">Firearm</span></div>
+            </div>
+            <h4 class="weapon-name">Musket (Senapan)</h4>
+            <p class="weapon-desc">Senjata api paling powerful dengan damage tertinggi. Bisa one-shot hampir semua musuh. Harus berdiri diam saat menembak untuk akurasi. Reload sangat lambat — ~6 detik.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:95%"></div></div><span class="stat-value">95p</span></div>
+              <div class="stat-row"><span class="stat-label">Range</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div><span class="stat-value">Jauh</span></div>
+              <div class="stat-row"><span class="stat-label">Reload</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:15%"></div></div><span class="stat-value">Lambat</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-crosshair"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-firearm">Firearm</span></div>
+            </div>
+            <h4 class="weapon-name">Pistol</h4>
+            <p class="weapon-desc">Senjata api pendek — digunakan dari atas kuda atau jarak dekat. Bisa membawa multiple pistol sebagai backup. Damage lebih rendah dari musket tapi lebih cepat dalam situasi berjarak dekat.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:70%"></div></div><span class="stat-value">65p</span></div>
+              <div class="stat-row"><span class="stat-label">Range</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:40%"></div></div><span class="stat-value">Dekat</span></div>
+              <div class="stat-row"><span class="stat-label">Reload</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:35%"></div></div><span class="stat-value">Medium</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-fire"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-throwing">Explosive</span></div>
+            </div>
+            <h4 class="weapon-name">Granat (Grenade)</h4>
+            <p class="weapon-desc">Area of effect explosive — satu-satunya senjata AoE di seri M&amp;B. Ledakan merusak semua musuh dalam radius. Berbahaya untuk diri sendiri jika dilempar terlalu dekat! Jumlah sangat terbatas.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">AoE</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:85%"></div></div><span class="stat-value">Luas</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div><span class="stat-value">75b</span></div>
+              <div class="stat-row"><span class="stat-label">Stock</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:20%"></div></div><span class="stat-value">2–4</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-arrows-left-right"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-firearm">Firearm</span></div>
+            </div>
+            <h4 class="weapon-name">Blunderbuss</h4>
+            <p class="weapon-desc">Shotgun abad ke-17 — menyebar peluru dalam arc lebar. Efektif luar biasa pada jarak sangat dekat. Ideal untuk siege, koridor sempit, dan momen musuh bergerombol maju.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Spread</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:90%"></div></div><span class="stat-value">Lebar</span></div>
+              <div class="stat-row"><span class="stat-label">Range</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:20%"></div></div><span class="stat-value">Sangat Dekat</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:75%"></div></div><span class="stat-value">Multi-hit</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-box info-tip">
+          <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
+          <div class="info-box-content">
+            <h5>Strategi Gunpowder Optimal</h5>
+            <p>Selalu bawa: 1 Musket (reload sebelum pertempuran), 2–3 Pistol (backup saat musket kosong), 2 Granat (situasi darurat/pengelompokan musuh). Setelah semua habis, beralih ke senjata melee tanpa ragu.</p>
+          </div>
+        </div>
+
+        <div class="tactic-card reveal" style="margin-top:20px">
+          <span class="tactic-icon"><i class="ph-bold ph-crosshair"></i></span>
+          <div class="tactic-content">
+            <h4>Cara Menembak Akurat dengan Musket</h4>
+            <p>Berdiri diam (jangan bergerak saat menembak). Tahan napas (tahan klik kanan) untuk stabilkan bidikan. Jangan shoot jika crosshair masih besar/bergerak. Tembak saat musuh dalam jarak 30–60 meter untuk akurasi optimal. Musket sangat tidak akurat saat berlari atau di atas kuda.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Akurasi</span><span class="tactic-tag">Musket</span><span class="tactic-tag">Fundamental</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="melee-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-sword"></i> Senjata Melee — Era Baroque</h2>
+        <p class="content-section-desc">Fire &amp; Sword memiliki senjata melee yang terinspirasi dari Eropa Timur abad ke-17 — sabre, hussar sword, dan berbagai senjata khas.</p>
+
+        <div class="weapons-grid">
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-sword"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-melee">Sabre</span></div>
+            </div>
+            <h4 class="weapon-name">Hussar Sabre</h4>
+            <p class="weapon-desc">Senjata ikonik Hussar Polandia. Sangat cepat dengan arc serangan yang lebar. Ideal untuk pertempuran berkuda. Damage lebih rendah dari longsword tapi kecepatan kompensasi sepenuhnya.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:92%"></div></div><span class="stat-value">98</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:65%"></div></div><span class="stat-value">30c</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:72%"></div></div><span class="stat-value">99</span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-arrow-up"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-polearm">Hussar Lance</span></div>
+            </div>
+            <h4 class="weapon-name">Hussar Lance</h4>
+            <p class="weapon-desc">Lance kavaleri khas Winged Hussar — lebih panjang dari lance Warband biasa. Couched charge damage sangat tinggi. Ikon abadi cavalry charge abad ke-17 Eropa Timur.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:55%"></div></div><span class="stat-value">70</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:98%"></div></div><span class="stat-value">155</span></div>
+              <div class="stat-row"><span class="stat-label">Charge</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:100%"></div></div><span class="stat-value"><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i></span></div>
+            </div>
+          </div>
+          <div class="weapon-card reveal">
+            <div class="weapon-card-header">
+              <span class="weapon-icon"><i class="ph-bold ph-hammer"></i></span>
+              <div class="weapon-rating"><span class="weapon-type-badge badge-melee">Mace</span></div>
+            </div>
+            <h4 class="weapon-name">Buzdygan (War Mace)</h4>
+            <p class="weapon-desc">Gada perang khas Cossack dan Tatars. Damage blunt tinggi — ideal untuk mengambil tawanan. Menghancurkan armor lebih efisien dari pedang biasa.</p>
+            <div class="weapon-stats">
+              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:68%"></div></div><span class="stat-value">85</span></div>
+              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div><span class="stat-value">38b</span></div>
+              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:55%"></div></div><span class="stat-value">80</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="factions-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-castle-turret"></i> 5 Faksi Sejarah</h2>
+        <p class="content-section-desc">Faksi di Fire &amp; Sword didasarkan pada kekuatan sejarah nyata Eropa Timur abad ke-17.</p>
+
+        <div class="faction-grid">
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-bird"></i></span>
+            <h4 class="faction-name">Polandia-Lithuania (Commonwealth)</h4>
+            <p class="faction-desc">Faksi terkuat dengan pasukan elite Hussar. Winged Hussar adalah kavaleri paling tangguh di game. Teknologi senjata api dan melee terbaik.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Hussar charge dahsyat</li><li>Infanteri kuat</li><li>Musket quality baik</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Biaya sangat mahal</li><li>Rekrutmen lambat</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-fire"></i></span>
+            <h4 class="faction-name">Cossack Hetmanate</h4>
+            <p class="faction-desc">Pejuang gerilya dan prajurit padang terbuka. Campuran musket, sabre, dan horse archer. Playable faction terbaik untuk pemula — versatile dan fleksibel.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Versatile — semua tipe</li><li>Biaya terjangkau</li><li>Musketer handal</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Tidak ada pasukan elite khusus</li><li>Pertahanan lemah</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-snowflake"></i></span>
+            <h4 class="faction-name">Tsardom of Russia (Moskow)</h4>
+            <p class="faction-desc">Kekuatan besar timur — infanteri streltsy dengan musket, kavaleri boyar. Lambat tapi sangat solid dalam pertahanan dan pengepungan kota besar.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Streltsy musketeer kuat</li><li>Pertahanan kota solid</li><li>Artileri available</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Kavaleri biasa</li><li>Lambat secara keseluruhan</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-crown"></i></span>
+            <h4 class="faction-name">Kingdom of Sweden</h4>
+            <p class="faction-desc">Faksi modern dan disiplin — Caroleans mereka adalah infanteri musket terbaik. Sangat handal dalam pertempuran terbuka dengan formasi tempur superior.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Disiplin infanteri tinggi</li><li>Carolean musket akurat</li><li>Formasi sangat baik</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Kavaleri lemah</li><li>Biaya mahal</li></ul></div>
+            </div>
+          </div>
+          <div class="faction-card reveal">
+            <span class="faction-flag"><i class="ph-bold ph-moon"></i></span>
+            <h4 class="faction-name">Crimean Khanate</h4>
+            <p class="faction-desc">Tatar nomad — horse archer paling mobile. Hampir murni kavaleri ringan dengan sedikit infanteri. Gaya hit-and-run ekstrem yang sulit dilawan di medan terbuka.</p>
+            <div class="faction-pros-cons">
+              <div class="faction-pros"><h6>Keunggulan</h6><ul><li>Horse archer terbaik</li><li>Kecepatan tinggi</li><li>Sulit ditangkap</li></ul></div>
+              <div class="faction-cons"><h6>Kelemahan</h6><ul><li>Lemah siege</li><li>Sangat sedikit musket</li></ul></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="combat-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-sword"></i> Mekanis Tempur Baru</h2>
+        <p class="content-section-desc">Fire &amp; Sword mempertahankan sistem tempur Warband dan menambahkan lapisan mekanis baru terkait senjata api.</p>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-crosshair"></i></span>
+          <div class="tactic-content">
+            <h4>Volley Fire System</h4>
+            <p>Pasukan musketeer bisa diperintahkan untuk tembak bersama-sama (volley). Volley jauh lebih efektif dari tembak acak — kepadatan peluru membuat musuh tidak bisa maju. Gunakan perintah "Hold" dan "Fire At Will" di waktu yang tepat.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Musketer</span><span class="tactic-tag">Formasi</span><span class="tactic-tag">Sinkronisasi</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-shield"></i></span>
+          <div class="tactic-content">
+            <h4>Armor vs Senjata Api</h4>
+            <p>Armor berat (plate armor) memberikan lebih sedikit perlindungan terhadap senjata api dibanding senjata melee. Pierce damage dari musket hampir selalu menembus armor. Ini mengubah meta — speed dan agility lebih penting dari raw armor di game ini.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Armor Mechanic</span><span class="tactic-tag">Pierce</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-flag"></i></span>
+          <div class="tactic-content">
+            <h4>Pistol Berkuda</h4>
+            <p>Berkuda dengan pistol — gunakan sebelum charge untuk melemahkan musuh. Tembak dari jarak 10–20 meter untuk akurasi terbaik dari atas kuda. Setelah tembak, beralih ke sabre dan charge. Ini adalah gaya bertarung ikonik kavaleri abad 17.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Kavaleri</span><span class="tactic-tag">Pistol</span><span class="tactic-tag">Charge</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="tactics-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-crosshair"></i> Taktik Era Bubuk Mesiu</h2>
+        <p class="content-section-desc">Kehadiran senjata api mengubah taktik fundamental. Formasi, timing, dan manajemen amunisi jauh lebih kritis dari Warband.</p>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-fire"></i></span>
+          <div class="tactic-content">
+            <h4>Taktik "Fire and Charge"</h4>
+            <p>Musketer menembak gelombang pertama musuh — setelah musuh melemah, kavaleri charge masuk dari sayap. Ini taktik paling efektif di game. Sinkronisasi antara tembakan dan charge sangat menentukan keberhasilan.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Koordinasi</span><span class="tactic-tag">Semua Faksi</span><span class="tactic-tag">Deadly</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-shield-check"></i></span>
+          <div class="tactic-content">
+            <h4>Pertahanan Dinding dengan Musket</h4>
+            <p>Saat mempertahankan kastil, tempatkan musketer di tembok dan menara. Mereka memiliki keunggulan tinggi yang membuat reload aman. Satu baris musketer di tembok bisa menghentikan serangan ratusan musuh jika posisi tepat.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Siege Defense</span><span class="tactic-tag">Musketer</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-target"></i></span>
+          <div class="tactic-content">
+            <h4>Counter Kavaleri dengan Musket</h4>
+            <p>Senjata api adalah counter alami kavaleri — tembak ketika kavaleri musuh sedang charge. Satu volley tepat bisa menghancurkan entire cavalry wave. Posisikan musketer dalam formasi dengan infanteri polearm di depan mereka sebagai "screen".</p>
+            <div class="tactic-tags"><span class="tactic-tag">Anti-Cavalry</span><span class="tactic-tag">Volley</span><span class="tactic-tag">Formasi</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="troops-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-users"></i> Pasukan &amp; Rekrutmen</h2>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Tipe Pasukan</th><th>Faksi</th><th>Senjata Utama</th><th>Kegunaan</th></tr></thead>
+            <tbody>
+              <tr><td>Winged Hussar</td><td>Commonwealth</td><td>Hussar Lance + Sabre</td><td>Elite cavalry charge — paling mematikan</td></tr>
+              <tr><td>Streltsy</td><td>Russia</td><td>Musket + Berdysh Axe</td><td>Infanteri musketeer heavy</td></tr>
+              <tr><td>Carolean</td><td>Sweden</td><td>Musket + Bayonet</td><td>Disiplin fire line formation</td></tr>
+              <tr><td>Zaporozhian Cossack</td><td>Cossack</td><td>Sabre + Pistol</td><td>Mobile melee + ranged</td></tr>
+              <tr><td>Tatar Horse Archer</td><td>Crimea</td><td>Bow + Light Sabre</td><td>Hit-and-run harassment</td></tr>
+              <tr><td>Dragoon</td><td>Semua</td><td>Musket + Sabre</td><td>Mounted infantry — sangat versatile</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-box info-tip">
+          <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
+          <div class="info-box-content">
+            <h5>Dragoon — Pasukan Terbaik</h5>
+            <p>Dragoon adalah pasukan paling fleksibel — berkuda untuk mobilitas, turun dari kuda untuk menembak. Sangat berguna untuk manuver cepat dan switching antara ranged dan melee. Wajib punya beberapa Dragoon di party.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="economy-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-coins"></i> Ekonomi &amp; Logistik</h2>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-package"></i></span>
+          <div class="tactic-content">
+            <h4>Mengelola Biaya Amunisi</h4>
+            <p>Bubuk mesiu dan peluru dijual di merchant kota. Selalu beli stok amunisi sebelum kampanye panjang. Biaya amunisi bisa signifikan jika army besar penuh musketer. Cossack dan Tatar lebih hemat amunisi karena banyak menggunakan senjata tradisional.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Logistik</span><span class="tactic-tag">Amunisi</span><span class="tactic-tag">Budgeting</span></div>
+          </div>
+        </div>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Komoditas</th><th>Beli di</th><th>Jual Terbaik</th><th>Margin</th></tr></thead>
+            <tbody>
+              <tr><td>Saltpeter (Sendawa)</td><td>Kota tambang selatan</td><td>Kota militer</td><td>Tinggi</td></tr>
+              <tr><td>Fur (Bulu)</td><td>Kota utara</td><td>Kota besar barat</td><td>Sangat Tinggi</td></tr>
+              <tr><td>Grain (Gandum)</td><td>Desa pertanian</td><td>Kota terkepung</td><td>Medium-Tinggi</td></tr>
+              <tr><td>Iron</td><td>Kota tambang</td><td>Kota senjata</td><td>Medium</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ COMPANIONS ═══════════════════════════ -->
+      <section class="content-section reveal" id="companions-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-handshake"></i> Companions Fire &amp; Sword</h2>
+        <p class="content-section-desc">Berbeda dengan Warband, di Fire &amp; Sword kamu bisa melengkapi (equip) companion dengan barang khusus dari Special Merchant dan Custom Weapon/Armor smith.</p>
+
+        <h3 style="color:var(--gold-light);margin:24px 0 16px;font-size:1.1rem;">Daftar Companion Utama</h3>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Nama</th><th>Background</th><th>Spesialisasi</th><th>Fungsi Utama</th></tr></thead>
+            <tbody>
+              <tr><td><strong style="color:#e8c878">Sarabun</strong></td><td>Physician dari Timur</td><td>Surgery 4, First Aid 4, Wound Treat 4</td><td>Surgeon utama — wajib mutlak dimiliki!</td></tr>
+              <tr><td><strong style="color:#e8c878">Tevrigh</strong></td><td>Mantan Budak</td><td>Tracking 4, Spotting 4, Pathfinding 3</td><td>Scout terbaik — tracking &amp; speed party</td></tr>
+              <tr><td><strong style="color:#e8c878">Oksana</strong></td><td>Wanita Cossack</td><td>First Aid 3, Wound Treat 3, Tactics 2</td><td>Healer backup &amp; tactician</td></tr>
+              <tr><td><strong style="color:#e8c878">Bakhyt</strong></td><td>Prajurit Tatar</td><td>Horse Archery 4, Riding 4, Spotting 3</td><td>Cavalry scout &amp; horse archer</td></tr>
+              <tr><td><strong style="color:#e8c878">Spasokukotsky</strong></td><td>Imam (Priest)</td><td>Trade 3, Persuasion 3, First Aid 2</td><td>Trader &amp; diplomat</td></tr>
+              <tr><td><strong style="color:#e8c878">Yelisei</strong></td><td>Bangsawan Miskin</td><td>Leadership 3, Tactics 3, Trainer 2</td><td>Commander &amp; trainer pasukan</td></tr>
+              <tr><td><strong style="color:#e8c878">Karl</strong></td><td>Tentara Bayaran Swedia</td><td>Engineering 4, Crossbow 4, Tactics 3</td><td>Engineer (siege) &amp; ranged DPS</td></tr>
+              <tr><td><strong style="color:#e8c878">Ingri</strong></td><td>Prajurit Wanita</td><td>One-Handed 4, Athletics 4, Looting 3</td><td>Melee fighter &amp; looter</td></tr>
+              <tr><td><strong style="color:#e8c878">Fatima</strong></td><td>Pedagang Kain</td><td>Trade 4, Persuasion 3, Pathfinding 2</td><td>Trader utama party &amp; negosiator</td></tr>
+              <tr><td><strong style="color:#e8c878">Priest Macarius</strong></td><td>Pendeta Ortodoks</td><td>First Aid 4, Wound Treat 3, Surgery 2</td><td>Support healer &amp; morale booster</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-box info-tip">
+          <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
+          <div class="info-box-content">
+            <h5>Custom Equipment untuk Companion</h5>
+            <p>Di Fire &amp; Sword, kamu bisa membuat <strong>Custom Armor &amp; Weapon</strong> melalui Armor Smith &amp; Weapon Smith di kota (butuh waktu &amp; uang banyak). Equip companion andalanmu dengan armor custom ini untuk membuat mereka hampir kebal dari tembakan pistol.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ QUEST & STORY ═══════════════════════════ -->
+      <section class="content-section reveal" id="quests-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-scroll"></i> Quest &amp; Storyline Utama</h2>
+        <p class="content-section-desc">Ini adalah perbedaan terbesar Fire &amp; Sword. Game ini memiliki 3 storyline Campaign Utama yang panjang dan linear, didasarkan pada buku dan sejarah.</p>
+
+        <div class="info-box info-warn">
+          <span class="info-box-icon"><i class="ph-bold ph-warning"></i></span>
+          <div class="info-box-content">
+            <h5>Sistem Eksklusif (Lock-out)</h5>
+            <p>Ketiga storyline utama ini <strong>saling eksklusif</strong>. Begitu kamu memulai satu storyline dan maju ke tahap tertentu, kamu tidak bisa lagi menjalankan storyline dari faksi lain. Pilih keberpihakanmu dengan hati-hati!</p>
+          </div>
+        </div>
+
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-bird"></i></span>
+          <div class="tactic-content">
+            <h4>Storyline 1: The Deluge (Polandia-Lithuania)</h4>
+            <p><strong>Cara Mulai:</strong> Bertempur untuk Poland, miliki relation positif, cari Lord Zagloba di tavern, dan tanya tentang misi spesial.</p>
+            <p style="margin-top:8px;"><strong>Alur Cerita:</strong> Kamu membantu Polandia menahan invasi besar-besaran dari Swedia (The Deluge). Kamu akan merebut kembali kota-kota suci, mencari komandan yang hilang, dan akhirnya memicu pemberontakan besar-besaran rakyat Polandia melawan pendudukan Swedia. Ini adalah campaign dengan pertempuran terbesar.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Polandia</span><span class="tactic-tag">Large Battles</span><span class="tactic-tag">Patriotik</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-fire"></i></span>
+          <div class="tactic-content">
+            <h4>Storyline 2: The Black Mace (Cossack Hetmanate)</h4>
+            <p><strong>Cara Mulai:</strong> Dukung Cossack, bicaralah dengan Jacques de Clermont, selamatkan bangsawan Tatar, lalu cari Cossack hetman untuk memulai pencarian rahasia Black Mace.</p>
+            <p style="margin-top:8px;"><strong>Alur Cerita:</strong> Pencarian artefak legendaris "Black Mace" yang menjadi simbol kekuasaan mutlak Cossack. Quest ini penuh intrik, pengkhianatan, dan misteri. Di akhir quest, mace ini memberikan bonus Leadership masif dan hak untuk memimpin semua faksi Cossack.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Cossack</span><span class="tactic-tag">Artefak Langka</span><span class="tactic-tag">Intrik</span></div>
+          </div>
+        </div>
+        <div class="tactic-card reveal">
+          <span class="tactic-icon"><i class="ph-bold ph-snowflake"></i></span>
+          <div class="tactic-content">
+            <h4>Storyline 3: False Dmitry (Tsardom of Russia)</h4>
+            <p><strong>Cara Mulai:</strong> Bergabung sebagai prajurit Russia, dukung claimant untuk tahta Moskow (Eleonor), lalu lakukan misi rahasia untuk menyebarkan propaganda.</p>
+            <p style="margin-top:8px;"><strong>Alur Cerita:</strong> Terlibat dalam krisis sukses Rusia di abad ke-17. Kamu akan mendukung Tsar palsu (False Dmitry) atau mengembalikan dinasti yang sah. Fokus pada politik, revolusi kota, pembunuhan diam-diam, dan siege pertahanan kastil melawan pemberontak.</p>
+            <div class="tactic-tags"><span class="tactic-tag">Rusia</span><span class="tactic-tag">Politik Tahta</span><span class="tactic-tag">Revolusi</span></div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--gold-light);margin:28px 0 16px;font-size:1.15rem;">Sistem Ekonomi Eksklusif F&amp;S</h3>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead><tr><th>Fitur Baru</th><th>Penjelasan</th><th>Keuntungan</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Bank System</strong></td><td>Kamu bisa menabung uang di Mayor kota dan mendapat bunga pasif 14% per bulan.</td><td>Passive income aman dan stabil</td></tr>
+              <tr><td><strong>Wagon Fort (Laager)</strong></td><td>Membangun barikade gerobak dari inventory saat berkemah di peta dunia.</td><td>Sangat kuat menahan cavalry charge musuh</td></tr>
+              <tr><td><strong>Mercenary Camps</strong></td><td>Camp bayaran tersebar di peta untuk merekrut Pikeman, Musketeer, dan Reiter dengan cepat.</td><td>Membangun pasukan kuat instan tanpa training</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="tips-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-lightbulb"></i> Tips &amp; Trik Fire &amp; Sword</h2>
+        <div class="tips-grid" style="margin-top:8px">
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-crosshair"></i></div><h4>Pre-load Musket</h4><p>Selalu reload musket sebelum masuk ke area pertempuran. Jangan pernah maju dengan musket kosong.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-fire"></i></div><h4>Granat untuk Siege</h4><p>Simpan granat untuk pertempuran kastil — lempar ke kerumunan defender di gerbang atau courtyard sempit.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-flag"></i></div><h4>Hussar untuk Breakthrough</h4><p>Winged Hussar charge bisa menembus garis infanteri manapun. Pastikan arah charge bebas dari tombak dan polearm.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-moon"></i></div><h4>Lawan Tatar dengan Jebakan</h4><p>Tatar sulit ditangkap di medan terbuka. Pancing ke medan sempit atau hutan di mana kecepatan mereka tidak berguna.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-handshake"></i></div><h4>Netral di Awal</h4><p>Jangan pilih pihak terlalu awal. Lakukan quest untuk semua faksi dulu untuk mendapat akses maksimal ke merchant dan rekrutan.</p></div>
+          <div class="tip-card reveal"><div class="tip-icon"><i class="ph-bold ph-lightning"></i></div><h4>Pistol + Charge Combo</h4><p>Tembak pistol dari atas kuda di jarak dekat lalu langsung charge sabre. Combo ini sangat mematikan dan membuat musuh tidak sempat bereaksi.</p></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon"><i class="ph-bold ph-sword"></i></span>
+          <span class="logo-text">M&amp;B Guide</span>
+          <p class="footer-tagline">Panduan komunitas fan-made. Bukan afiliasi resmi TaleWorlds.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Halaman</h5>
+          <ul><li><a href="index.html">Beranda</a></li><li><a href="warband.html">Warband</a></li><li><a href="bannerlord.html">Bannerlord</a></li></ul>
+        </div>
+        <div class="footer-links">
+          <h5>Seksi</h5>
+          <ul><li><a href="#firearms">Senjata Api</a></li><li><a href="#tactics-fas">Taktik</a></li><li><a href="#factions-fas">Faksi</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 M&amp;B Guide — Dibuat dengan <i class="ph-fill ph-heart" style="color:var(--fas-primary);font-size:0.9rem;"></i> untuk komunitas Mount &amp; Blade Indonesia</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
