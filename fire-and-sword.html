@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
 <body class="fas-theme">
@@ -55,6 +55,7 @@
           <li><a href="#troops-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-users"></i></span> Pasukan</a></li>
           <li><a href="#economy-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-coins"></i></span> Ekonomi</a></li>
           <li><a href="#companions-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-handshake"></i></span> Companions</a></li>
+          <li><a href="#marriage-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-heart-break"></i></span> Pernikahan</a></li>
           <li><a href="#quests-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-scroll"></i></span> Quest &amp; Story</a></li>
           <li><a href="#tips-fas" class="nav-link-side"><span class="nav-icon"><i class="ph-bold ph-lightbulb"></i></span> Tips &amp; Trik</a></li>
         </ul>
@@ -110,11 +111,6 @@
             </div>
             <h4 class="weapon-name">Musket (Senapan)</h4>
             <p class="weapon-desc">Senjata api paling powerful dengan damage tertinggi. Bisa one-shot hampir semua musuh. Harus berdiri diam saat menembak untuk akurasi. Reload sangat lambat — ~6 detik.</p>
-            <div class="weapon-stats">
-              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:95%"></div></div><span class="stat-value">95p</span></div>
-              <div class="stat-row"><span class="stat-label">Range</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div><span class="stat-value">Jauh</span></div>
-              <div class="stat-row"><span class="stat-label">Reload</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:15%"></div></div><span class="stat-value">Lambat</span></div>
-            </div>
           </div>
           <div class="weapon-card reveal">
             <div class="weapon-card-header">
@@ -123,11 +119,6 @@
             </div>
             <h4 class="weapon-name">Pistol</h4>
             <p class="weapon-desc">Senjata api pendek — digunakan dari atas kuda atau jarak dekat. Bisa membawa multiple pistol sebagai backup. Damage lebih rendah dari musket tapi lebih cepat dalam situasi berjarak dekat.</p>
-            <div class="weapon-stats">
-              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:70%"></div></div><span class="stat-value">65p</span></div>
-              <div class="stat-row"><span class="stat-label">Range</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:40%"></div></div><span class="stat-value">Dekat</span></div>
-              <div class="stat-row"><span class="stat-label">Reload</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:35%"></div></div><span class="stat-value">Medium</span></div>
-            </div>
           </div>
           <div class="weapon-card reveal">
             <div class="weapon-card-header">
@@ -136,11 +127,6 @@
             </div>
             <h4 class="weapon-name">Granat (Grenade)</h4>
             <p class="weapon-desc">Area of effect explosive — satu-satunya senjata AoE di seri M&amp;B. Ledakan merusak semua musuh dalam radius. Berbahaya untuk diri sendiri jika dilempar terlalu dekat! Jumlah sangat terbatas.</p>
-            <div class="weapon-stats">
-              <div class="stat-row"><span class="stat-label">AoE</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:85%"></div></div><span class="stat-value">Luas</span></div>
-              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div><span class="stat-value">75b</span></div>
-              <div class="stat-row"><span class="stat-label">Stock</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:20%"></div></div><span class="stat-value">2–4</span></div>
-            </div>
           </div>
           <div class="weapon-card reveal">
             <div class="weapon-card-header">
@@ -149,11 +135,6 @@
             </div>
             <h4 class="weapon-name">Blunderbuss</h4>
             <p class="weapon-desc">Shotgun abad ke-17 — menyebar peluru dalam arc lebar. Efektif luar biasa pada jarak sangat dekat. Ideal untuk siege, koridor sempit, dan momen musuh bergerombol maju.</p>
-            <div class="weapon-stats">
-              <div class="stat-row"><span class="stat-label">Spread</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:90%"></div></div><span class="stat-value">Lebar</span></div>
-              <div class="stat-row"><span class="stat-label">Range</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:20%"></div></div><span class="stat-value">Sangat Dekat</span></div>
-              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:75%"></div></div><span class="stat-value">Multi-hit</span></div>
-            </div>
           </div>
         </div>
 
@@ -187,11 +168,6 @@
             </div>
             <h4 class="weapon-name">Hussar Sabre</h4>
             <p class="weapon-desc">Senjata ikonik Hussar Polandia. Sangat cepat dengan arc serangan yang lebar. Ideal untuk pertempuran berkuda. Damage lebih rendah dari longsword tapi kecepatan kompensasi sepenuhnya.</p>
-            <div class="weapon-stats">
-              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:92%"></div></div><span class="stat-value">98</span></div>
-              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:65%"></div></div><span class="stat-value">30c</span></div>
-              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:72%"></div></div><span class="stat-value">99</span></div>
-            </div>
           </div>
           <div class="weapon-card reveal">
             <div class="weapon-card-header">
@@ -200,11 +176,6 @@
             </div>
             <h4 class="weapon-name">Hussar Lance</h4>
             <p class="weapon-desc">Lance kavaleri khas Winged Hussar — lebih panjang dari lance Warband biasa. Couched charge damage sangat tinggi. Ikon abadi cavalry charge abad ke-17 Eropa Timur.</p>
-            <div class="weapon-stats">
-              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:55%"></div></div><span class="stat-value">70</span></div>
-              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:98%"></div></div><span class="stat-value">155</span></div>
-              <div class="stat-row"><span class="stat-label">Charge</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:100%"></div></div><span class="stat-value"><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i><i class="ph-fill ph-star" style="color:var(--gold-light)"></i></span></div>
-            </div>
           </div>
           <div class="weapon-card reveal">
             <div class="weapon-card-header">
@@ -213,11 +184,6 @@
             </div>
             <h4 class="weapon-name">Buzdygan (War Mace)</h4>
             <p class="weapon-desc">Gada perang khas Cossack dan Tatars. Damage blunt tinggi — ideal untuk mengambil tawanan. Menghancurkan armor lebih efisien dari pedang biasa.</p>
-            <div class="weapon-stats">
-              <div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:68%"></div></div><span class="stat-value">85</span></div>
-              <div class="stat-row"><span class="stat-label">Damage</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div><span class="stat-value">38b</span></div>
-              <div class="stat-row"><span class="stat-label">Reach</span><div class="stat-bar-wrap"><div class="stat-bar" style="width:55%"></div></div><span class="stat-value">80</span></div>
-            </div>
           </div>
         </div>
       </section>
@@ -337,18 +303,49 @@
 
       <section class="content-section reveal" id="troops-fas">
         <h2 class="content-section-title"><i class="ph-bold ph-users"></i> Pasukan &amp; Rekrutmen</h2>
-        <div class="stats-table-wrap">
-          <table class="stats-table">
-            <thead><tr><th>Tipe Pasukan</th><th>Faksi</th><th>Senjata Utama</th><th>Kegunaan</th></tr></thead>
-            <tbody>
-              <tr><td>Winged Hussar</td><td>Commonwealth</td><td>Hussar Lance + Sabre</td><td>Elite cavalry charge — paling mematikan</td></tr>
-              <tr><td>Streltsy</td><td>Russia</td><td>Musket + Berdysh Axe</td><td>Infanteri musketeer heavy</td></tr>
-              <tr><td>Carolean</td><td>Sweden</td><td>Musket + Bayonet</td><td>Disiplin fire line formation</td></tr>
-              <tr><td>Zaporozhian Cossack</td><td>Cossack</td><td>Sabre + Pistol</td><td>Mobile melee + ranged</td></tr>
-              <tr><td>Tatar Horse Archer</td><td>Crimea</td><td>Bow + Light Sabre</td><td>Hit-and-run harassment</td></tr>
-              <tr><td>Dragoon</td><td>Semua</td><td>Musket + Sabre</td><td>Mounted infantry — sangat versatile</td></tr>
-            </tbody>
-          </table>
+        <div class="info-box info-tip" style="margin-bottom: 24px;">
+          <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
+          <div class="info-box-content">
+            <h5>Mekanik Rekrutmen: Mercenary Camp</h5>
+            <p>Di Fire &amp; Sword, kamu bisa merekrut pasukan dari desa (Milisi) atau dari kota/kastil. Namun, pasukan terbaik dan terkuat seringkali didapatkan dengan memesannya secara khusus di <strong>Mercenary Camps</strong> atau dengan merekrut unit elit faksi di kota besar jika kamu sudah menjadi vassal/lord.</p>
+          </div>
+        </div>
+
+        <div class="weapons-grid">
+          <div class="weapon-card reveal">
+            <h4 class="weapon-name" style="color:var(--gold-light);">Polish Republic (Commonwealth)</h4>
+            <ul style="margin-top:10px; padding-left:15px; font-size:0.9rem;">
+              <li><strong>Winged Hussars (Kavaleri Berat Elit):</strong> Unit kavaleri paling mematikan dan ikonik di game. Membawa Hussar Lance panjang yang *charge damage*-nya tak tertandingi, kebal terhadap tembakan dari depan berkat armor berat.</li>
+              <li><strong>Pancerni (Kavaleri Menengah):</strong> Pasukan kavaleri lincah yang andal dalam melee.</li>
+            </ul>
+          </div>
+          <div class="weapon-card reveal">
+            <h4 class="weapon-name" style="color:var(--gold-light);">Tsardom of Russia</h4>
+            <ul style="margin-top:10px; padding-left:15px; font-size:0.9rem;">
+              <li><strong>Streltsy / Veteran Streltsy (Infanteri Ranged):</strong> Infanteri musket (senapan api) kelas berat yang membawa kapak raksasa (Berdysh Axe). Sangat sakit dalam tembakan jarak jauh dan sangat mematikan di melee jarak dekat.</li>
+              <li><strong>Boyars (Kavaleri):</strong> Kavaleri elit Rusia.</li>
+            </ul>
+          </div>
+          <div class="weapon-card reveal">
+            <h4 class="weapon-name" style="color:var(--gold-light);">Kingdom of Sweden</h4>
+            <ul style="margin-top:10px; padding-left:15px; font-size:0.9rem;">
+              <li><strong>Lifeguard / Carolean (Infanteri Ranged):</strong> Pasukan musket Swedia paling tangguh, disiplin tinggi. Satu-satunya unit di game yang paling sering menggunakan bayonet, memungkinkan mereka menahan kavaleri (anti-cavalry) sembari menembak.</li>
+              <li><strong>Swedish Reiters (Kavaleri Menengah):</strong> Penembak jitu berkuda.</li>
+            </ul>
+          </div>
+          <div class="weapon-card reveal">
+            <h4 class="weapon-name" style="color:var(--gold-light);">Cossack Hetmanate</h4>
+            <ul style="margin-top:10px; padding-left:15px; font-size:0.9rem;">
+              <li><strong>Zaporozhian Infantry (Infanteri):</strong> Sangat lincah dan cepat bermanuver. Infanteri ini serba bisa menggunakan pedang (sabre) dan senapan (musket/pistol).</li>
+              <li><strong>Serdiuk (Pemanah/Musketeer):</strong> Penembak andalan bangsa Cossack yang sangat ahli.</li>
+            </ul>
+          </div>
+          <div class="weapon-card reveal">
+            <h4 class="weapon-name" style="color:var(--gold-light);">Crimean Khanate</h4>
+            <ul style="margin-top:10px; padding-left:15px; font-size:0.9rem;">
+              <li><strong>Tatar Horse Archer / Mirza (Kavaleri Ringan):</strong> Mirip dengan Khergit di Warband. Pasukan ini hampir semuanya menunggang kuda dan membawa panah tradisional (bukan senapan). Sangat cocok untuk meng-harass (mengganggu) formasi musket musuh berkat mobilitas tinggi.</li>
+            </ul>
+          </div>
         </div>
         <div class="info-box info-tip">
           <span class="info-box-icon"><i class="ph-bold ph-lightbulb"></i></span>
@@ -416,6 +413,17 @@
       </section>
 
       <!-- ═══════════════════════════ QUEST & STORY ═══════════════════════════ -->
+      <section class="content-section reveal" id="marriage-fas">
+        <h2 class="content-section-title"><i class="ph-bold ph-heart-break"></i> Sistem Pernikahan (Marriage)</h2>
+        <div class="info-box info-warning" style="margin-bottom: 24px;">
+          <span class="info-box-icon"><i class="ph-bold ph-warning"></i></span>
+          <div class="info-box-content">
+            <h5>Tidak Ada Fitur Pernikahan di Game Ini</h5>
+            <p>Penting untuk dicatat bahwa <strong>Mount &amp; Blade: With Fire &amp; Sword TIDAK MEMILIKI fitur pernikahan sama sekali</strong>. Berbeda dengan <em>Warband</em> atau <em>Bannerlord</em> di mana kamu bisa mendekati Lady/Lord dan menikahi mereka untuk aliansi keluarga, developer game ini secara sengaja menghapus fitur tersebut. Game ini lebih difokuskan pada karir sebagai tentara bayaran (mercenary) dan cerita (storyline) sejarah Eropa Timur, sehingga kehidupan berkeluarga karakter utama ditiadakan.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="content-section reveal" id="quests-fas">
         <h2 class="content-section-title"><i class="ph-bold ph-scroll"></i> Quest &amp; Storyline Utama</h2>
         <p class="content-section-desc">Ini adalah perbedaan terbesar Fire &amp; Sword. Game ini memiliki 3 storyline Campaign Utama yang panjang dan linear, didasarkan pada buku dan sejarah.</p>
@@ -502,10 +510,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 M&amp;B Guide — Dibuat dengan <i class="ph-fill ph-heart" style="color:var(--fas-primary);font-size:0.9rem;"></i> untuk komunitas Mount &amp; Blade Indonesia</p>
+        <p>© 2026 M&amp;B Guide — Dibuat oleh <strong>Argeswara</strong></p>
       </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <a href="https://instagram.com/argeswara_" target="_blank" class="float-ig">
+    <i class="ph-bold ph-instagram-logo"></i> @argeswara_
+  </a>
 </body>
 </html>
